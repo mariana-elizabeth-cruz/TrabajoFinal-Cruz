@@ -1,0 +1,213 @@
+/*Fuente principal*/
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 10px;
+}
+body {
+    font-family: 'Catamaran',
+    sans-serif;
+    background: linear-gradient(45deg, #6bb4ea, #f59fc4);
+}
+/*estilo para el menu*/
+nav ul {
+    background-color: black;
+    padding: 30px 10px 30px 10px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.nav-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(146, 143, 143);
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+ul li {
+    display: inline;
+}
+
+li {
+    margin: 10px;
+    padding: 5px;
+}
+.navLinks li a:hover {
+    color: #780085;
+    cursor: pointer;
+}
+
+/*------------------------*/
+/* Estilo para titulo y portada */
+h1 {
+    font-size: 45px;
+    line-height: 2;
+    letter-spacing: 3px;
+    text-shadow: 2px 4px 10px rgb(55, 12, 95);
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.titulo {
+    text-align: center;
+    text-transform: uppercase;
+}
+.img-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.subTitulo {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+/*estilo para caja noticias*/
+.noticias {
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+.noti2 {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-areas: 
+    "imgUno imgDos imgTres" ;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+
+}
+.img1Noti{
+    width: 300px;
+    height: 300px;
+    grid-area: imgUno;
+}
+.img2Noti {
+    width: 380px;
+    height: 300px;
+    grid-area: imgDos;
+}
+.img3Noti {
+    width: 350px;
+    height: 300px;
+    grid-area: imgTres;
+}
+
+/* Estilo para las carteleras de las paginas */
+/* .cartelera {
+    display: inline-block;    
+    
+} */
+
+/*estilo caja comentarios*/
+.cajaPrincipal {
+    border: 1px solid black;
+    margin: 15px;
+    padding: 5px;
+    
+}
+/* .cajaC {
+    border: 1px solid black;
+} */
+.comentario {
+    border: 1px solid black;
+    width: 300px;
+    height: 450px;
+}
+/* Pie de pagina */
+footer {
+    text-align: center;
+    margin-top: 15px;
+}
+.btnRedes {
+    font-size: 18px;
+    color: black;
+}
+
+/* Estilo para seccion de categorias */
+.serie1 {
+    width: 340px;
+    height: 420px;
+}
+.serie3 {
+    width: 320px;
+    height: 430px;
+}
+.serie4 {
+    width: 300px;
+    height: 430px;
+}
+.boxCategoria {
+    margin: 15px;
+    padding: 10px
+}
+
+/* Estilo para seccion Mi lista */
+.imgLista {
+    width: 650px;
+    height: 400px;
+}
+
+/* Estilos para seccion de estrenos */
+
+.divPadre {
+    margin: 20px;
+    padding: 10px;
+}
+.divHijo {
+    text-align: center;
+}
+
+
+
+/* Estilo para seccion Login */
+.loginPadre {
+    margin: 20px;
+    padding: 15px;
+    position: relative;
+
+}
+.login {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 550px;
+    height: 450px; 
+}
+.pos {
+    position: relative;
+    top: 0;
+    left: 32%;
+}
+div a {
+    color: blue;
+}
+label {
+    font-size: 20px;
+}
+.seccion {
+    margin-top: 20px;
+    padding-top: 40px;
+}
+.seccionL {
+    margin: 10px;
+    padding: 10px;
+}
+.btn {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btnLogin {
+    font-size: 15px;
+}
