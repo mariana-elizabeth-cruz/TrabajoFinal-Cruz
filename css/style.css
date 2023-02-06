@@ -7,7 +7,8 @@
 body {
     font-family: 'Catamaran',
     sans-serif;
-    background: linear-gradient(45deg, #6bb4ea, #f59fc4);
+    /* background: linear-gradient(45deg, #ecc0c6, #e8d2dc); */
+    background: linear-gradient(45deg, #247fbc, #fcc0c1);
 }
 /*estilo para el menu*/
 nav ul {
@@ -33,11 +34,8 @@ a {
     font-size: 22px;
 }
 
-ul li {
-    display: inline;
-}
-
 li {
+    list-style: none;
     margin: 10px;
     padding: 5px;
 }
@@ -49,58 +47,107 @@ li {
 /*------------------------*/
 /* Estilo para titulo y portada */
 h1 {
-    font-size: 45px;
+    font-size: 65px;
     line-height: 2;
     letter-spacing: 3px;
     text-shadow: 2px 4px 10px rgb(55, 12, 95);
     margin-top: 20px;
     padding-top: 20px;
 }
+
 .titulo {
     text-align: center;
     text-transform: uppercase;
 }
-.img-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.subTitulo {
-    font-size: 30px;
-    letter-spacing: 2px;
-}
 
-/*estilo para caja noticias*/
-.noticias {
-    border: 2px solid black;
-    border-radius: 10px;
-    
-}
-.noti2 {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-around; */
+.boxPortada {
     display: grid;
-    grid-template-areas: 
-    "imgUno imgDos imgTres" ;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-
+    place-items: center;
 
 }
-.img1Noti{
+.portada {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 430px;
+}
+
+.portada img {
+    width: 0px;
+    flex-grow: 1;
+    /* obect-fit: para que cubra todo el espacio */
+    object-fit: cover; 
+    opacity: 1;
+    transition: .5s ease;
+}
+.portada img:hover {
+    cursor: pointer;
     width: 300px;
-    height: 300px;
-    grid-area: imgUno;
+    opacity: 1;
+    /* filter: para devolver el contraste */
+    filter: contrast(120%);
 }
-.img2Noti {
+
+
+/* Acerd de nosotros*/
+
+.about {
+    border: 1px solid black;
+    border-radius: 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 10px;
+    margin-bottom: 35px;
+    padding: 15px;
+}
+
+.subTitulo {
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: 5px 80px 5px 35px;
+}
+.parrafoUno {
+    margin: 5px 35px 5px 35px;
+
+}
+
+/*Estilo para seccion noticias*/
+.noticias {
+    border: 1px solid black;
+    border-radius: 60px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+.boxNoti h2 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+/* Caja de imagenes y parrafos */
+.boxNotiDos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* caja individuales */
+.notiImg{
+    width: 450px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* imagenes */
+.imgUno {
+    width: 300px;
+}
+.imgDos {
     width: 380px;
-    height: 300px;
-    grid-area: imgDos;
 }
-.img3Noti {
+.imgTres {
     width: 350px;
-    height: 300px;
-    grid-area: imgTres;
 }
 
 /* Estilo para las carteleras de las paginas */

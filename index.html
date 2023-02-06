@@ -18,16 +18,16 @@
                     <a href="index.html">Inicio</a>
                 </li>
                 <li> 
-                    <a href="paginas/categoria.html" target="_blank">Categoria</a>
+                    <a href="paginas/categoria.html">Categoria</a>
                 </li>
                 <li>
-                    <a href="paginas/estrenos.html" target="_blank">Estrenos</a>
+                    <a href="paginas/estrenos.html">Estrenos</a>
                 </li>
                 <li>
-                    <a href="paginas/milista.html" target="_blank">Mi Lista</a>
+                    <a href="paginas/milista.html">Mi Lista</a>
                 </li>
                 <li>
-                    <a href="paginas/iniciarsesion.html" target="_blank">Iniciar Sesión</a>
+                    <a href="paginas/iniciarsesion.html">Iniciar Sesión</a>
                 </li>
             </ul>
         </nav>       
@@ -38,34 +38,46 @@
         <div class="titulo" >
             <h1>Te recomendamos las mejores series</h1>
         </div>
-        <div class="img-flex">
-            <img src="imagenes/portadaP.png" alt="imagen de portada de las series">
-        </div>
+
+        <section class="boxPortada">
+            <div class="portada">
+                <img src="imagenes/Cobra_Kai.jpg" alt="SerieCobra Kai">
+                <img src="imagenes/Euphoria.jpg" alt="Serie Euphoria">
+                <img src="imagenes/lastofus.jpg" alt="Serie The last Of us">
+                <img src="imagenes/peacemaker.jpg" alt="Serie Peacemaker">
+                <img src="imagenes/Start_Up.jpg" alt="Serie Start Up">
+            </div>                        
+        </section>
+        <!-- <img src="imagenes/portadaP.png" alt="imagen de portada de las series"> -->
+
         
-        <section>
+        <section class="about">
             <h2 class="subTitulo">Sobre nosotros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minus distinctio rerum voluptates ea! Nihil a id ea quam, expedita laboriosam nam cumque optio inventore repellendus commodi voluptate error totam!
+            <p class="parrafoUno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minus distinctio rerum voluptates ea! Nihil a id ea quam, expedita laboriosam nam cumque optio inventore repellendus commodi voluptate error totam!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni incidunt velit maiores! Quibusdam eos eveniet soluta id distinctio ab, unde dolores nisi beatae aliquam odio voluptatum. Accusamus magni sapiente repellat.
             </p>
         </section>
 
+        <!-- seccion noticias -->
         <section class="noticias">
-            <h2 class="subTitulo">Últimas noticias</h2>
-            <div class="noti2">
-                <!-- <div class="cartelera"> -->
-                <img class="img1Noti" src="imagenes/noti1.jpeg" alt="Noticia sobre Euphoria">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, debitis!</p>
-                <!-- </div> -->
-                <!-- <div class="cartelera"> -->
-                <img class="img2Noti" src="imagenes/noti2.png" alt="Noticia sobre Heartstopper">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eius.</p>
-            <!-- </div>
-            <div class="cartelera"> -->
-                <img class="img3Noti" src="imagenes/noti3.png" alt="Noticia sobre Stranger Things">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <!-- </div> -->
+            <div class="boxNoti">
+                <h2>Últimas noticias</h2>
             </div>
             
+            <div class="boxNotiDos">
+                <div class="notiImg">
+                    <img class="imgUno" src="imagenes/noti1.jpeg" alt="Noticia sobre Euphoria">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, debitis!</p>
+                </div>
+                <div class="notiImg">
+                    <img class="imgDos" src="imagenes/noti2.png" alt="Noticia sobre Heartstopper">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eius.</p>
+                </div>
+                <div class="notiImg">
+                    <img class="imgTres" src="imagenes/noti3.png" alt="Noticia sobre Stranger Things">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
         </section>
         
         <!-- seccion comentarios -->
@@ -113,12 +125,12 @@
                 <a href="https://www.youtube.com" class="btnRedes" target="_blank">YouTube</a>
             </li>
         </ul>
-        <h4>
-            Veamos una serie | © Todos los derechos reservados 2023
-        </h4>
-        <h4>
-            Santiago del Estero, Argentina
-        </h4>
+
+        <div class="footerText">
+            <h4>Veamos una serie | © Todos los derechos reservados 2023</h4>
+            <h4>Santiago del Estero, Argentina</h4>
+        </div>
+        
 
     </footer>
 </body>
