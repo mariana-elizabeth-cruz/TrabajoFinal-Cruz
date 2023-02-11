@@ -1,9 +1,6 @@
 /*Fuente principal*/
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
-* {
-    margin: 0;
-    padding: 10px;
-}
+
 body {
     font-family: 'Catamaran',
     sans-serif;
@@ -11,58 +8,55 @@ body {
     background: linear-gradient(45deg, #247fbc, #fcc0c1);
 }
 /*estilo para el menu*/
-nav ul {
-    background-color: black;
-    padding: 30px 10px 30px 10px;
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    top: 0;
-    left: 0;
+.logo {
+    width: 120px;
 }
-.nav-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 a {
     text-decoration: none;
     color: rgb(146, 143, 143);
     text-transform: uppercase;
     font-size: 22px;
 }
-
+.lista {
+    font-size: 15px;
+}
+.lista:hover{
+    background-color: #826b85;
+    color: black;
+}
 li {
     list-style: none;
-    margin: 10px;
-    padding: 5px;
+    /* margin: 10px;
+    padding: 5px; */
 }
-.navLinks li a:hover {
+
+/* a .lista:hover {
     color: #780085;
     cursor: pointer;
-}
+} */
 
 /*------------------------*/
 /* Estilo para titulo y portada */
+.titulo {
+    height: 200px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding-top: 20px;
+}
 h1 {
     font-size: 65px;
     line-height: 2;
     letter-spacing: 3px;
     text-shadow: 2px 4px 10px rgb(55, 12, 95);
-    margin-top: 20px;
-    padding-top: 20px;
-}
-
-.titulo {
-    text-align: center;
-    text-transform: uppercase;
 }
 
 .boxPortada {
     display: grid;
     place-items: center;
+    height: 500px;
 
 }
 .portada {
@@ -249,7 +243,7 @@ label {
     margin: 10px;
     padding: 10px;
 }
-.btn {
+.btn-Login {
     position: absolute;
     top: 65%;
     left: 50%;
@@ -257,4 +251,16 @@ label {
 }
 .btnLogin {
     font-size: 15px;
+}
+
+/* APLICANDO MEDIA QUERY */
+@media (max-width:425px) {
+
+    h1 {
+        font-size: 50px;
+        line-height: 1;
+        text-align: center;
+    }
+
+
 }
