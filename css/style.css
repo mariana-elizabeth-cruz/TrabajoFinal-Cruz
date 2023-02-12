@@ -11,12 +11,17 @@ body {
 .logo {
     width: 120px;
 }
-a {
+.menuL {
     text-decoration: none;
-    color: rgb(146, 143, 143);
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 20px;
+
 }
+
+.menuL:hover {
+    color: #6c59a8;
+}
+
 .lista {
     font-size: 15px;
 }
@@ -30,10 +35,17 @@ li {
     padding: 5px; */
 }
 
-/* a .lista:hover {
-    color: #780085;
-    cursor: pointer;
-} */
+
+.btn-buscar {
+    background-color: #826b85;
+    color: white;
+    
+}
+.btn-buscar:hover{
+    background-color: #999999;
+    color: black;
+    border: 1px solid black;
+}
 
 /*------------------------*/
 /* Estilo para titulo y portada */
@@ -48,6 +60,7 @@ li {
 }
 h1 {
     font-size: 65px;
+    font-weight: bold;
     line-height: 2;
     letter-spacing: 3px;
     text-shadow: 2px 4px 10px rgb(55, 12, 95);
@@ -71,7 +84,7 @@ h1 {
     flex-grow: 1;
     /* obect-fit: para que cubra todo el espacio */
     object-fit: cover; 
-    opacity: 1;
+    opacity: 0.8;
     transition: .5s ease;
 }
 .portada img:hover {
@@ -133,6 +146,7 @@ h1 {
     flex-direction: column;
     align-items: center;
 }
+
 /* imagenes */
 .imgUno {
     width: 300px;
@@ -254,13 +268,36 @@ label {
 }
 
 /* APLICANDO MEDIA QUERY */
-@media (max-width:425px) {
+
+/* para telefono */
+@media (max-width: 480px) {
 
     h1 {
         font-size: 50px;
         line-height: 1;
         text-align: center;
     }
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .notiImg p {
+        /* display: flex;
+        align-content: center;
+        justify-content: center; */
+        margin: 30px;
+    }
+
+    .portada {
+        width: 400px;
+        height: 350px;
+    }
+    .portada img:hover {
+        cursor: pointer;
+        width: 200px;
+        filter: contrast(120%);
+    }
+
 
 
 }
