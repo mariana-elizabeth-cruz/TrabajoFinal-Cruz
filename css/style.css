@@ -2,10 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
 
 body {
-    font-family: 'Catamaran',
-    sans-serif;
-    /* background: linear-gradient(45deg, #ecc0c6, #e8d2dc); */
-    background: linear-gradient(45deg, #247fbc, #fcc0c1);
+    font-family: 'Catamaran', sans-serif;
+    background-color: #927caa;
 }
 /*estilo para el menu*/
 .logo {
@@ -31,8 +29,6 @@ body {
 }
 li {
     list-style: none;
-    /* margin: 10px;
-    padding: 5px; */
 }
 
 
@@ -45,6 +41,7 @@ li {
     background-color: #999999;
     color: black;
     border: 1px solid black;
+    font-weight: bold;
 }
 
 /*------------------------*/
@@ -61,9 +58,10 @@ li {
 h1 {
     font-size: 65px;
     font-weight: bold;
+    color: black;
     line-height: 2;
     letter-spacing: 3px;
-    text-shadow: 2px 4px 10px rgb(55, 12, 95);
+    text-shadow: 2px 4px 10px #211235;
 }
 
 .boxPortada {
@@ -112,6 +110,8 @@ h1 {
     font-size: 40px;
     letter-spacing: 2px;
     margin: 5px 80px 5px 35px;
+    color: black;
+    font-weight: bold;
 }
 .parrafoUno {
     margin: 5px 35px 5px 35px;
@@ -125,12 +125,15 @@ h1 {
     padding-top: 15px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
 }
 .boxNoti h2 {
-    font-size: 35px;
+    font-size: 40px;
     letter-spacing: 2px;
+    color: black;
     text-align: center;
+    font-weight: bold;
+    margin: 15px;
+    padding: 10px;
 }
 /* Caja de imagenes y parrafos */
 .boxNotiDos{
@@ -149,13 +152,16 @@ h1 {
 
 /* imagenes */
 .imgUno {
-    width: 300px;
+    width: 375px;
 }
 .imgDos {
-    width: 380px;
+    width: 370px;
 }
-.imgTres {
-    width: 350px;
+.imgTres { 
+    width: 360px;
+}
+.notiImg p {
+    margin-top: 15px;
 }
 
 /* Estilo para las carteleras de las paginas */
