@@ -204,6 +204,7 @@ footer {
     text-align: center;
     background-color: #202020;
     height: 200px;
+    width: 100%;
     display: grid;
     align-items: end;
 }
@@ -308,7 +309,7 @@ label {
 /* APLICANDO MEDIA QUERY */
 
 /* PARA TELEFONO */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
     h1 {
         font-size: 50px;
@@ -346,5 +347,7 @@ label {
     }
 }
 
-/* PARA TABLET
-@media (min-width:) */
+/* PARA TABLET */
+@media (min-width:601) and (max-width:900px) {
+    
+}
