@@ -47,13 +47,13 @@ li {
 /*------------------------*/
 /* Estilo para titulo y portada */
 .titulo {
-    height: 200px;
+    height: 300px;
     text-transform: uppercase;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    margin-top: 80px;
-    padding-top: 20px;
+    /* margin-top: 80px;
+    padding-top: 20px; */
 }
 h1 {
     font-size: 65px;
@@ -202,12 +202,29 @@ h1 {
 /* Pie de pagina */
 footer {
     text-align: center;
-    margin-top: 15px;
+    background-color: #202020;
+    height: 200px;
+    display: grid;
+    align-items: end;
+}
+
+.footerLink {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .btnRedes {
-    font-size: 18px;
-    color: black;
+    font-size: 30px;
+    color: #a8a8a8;
+    margin: 15px;
+    padding: 20px;
 }
+.footerText {
+    color: #a8a8a8;
+}
+
+
 
 /* Estilo para seccion de categorias */
 .serie1 {
@@ -287,9 +304,10 @@ label {
     font-size: 15px;
 }
 
+
 /* APLICANDO MEDIA QUERY */
 
-/* para telefono */
+/* PARA TELEFONO */
 @media (max-width: 480px) {
 
     h1 {
@@ -302,14 +320,11 @@ label {
         grid-template-columns: 1fr;
     }
     .notiImg p {
-        /* display: flex;
-        align-content: center;
-        justify-content: center; */
         margin: 30px;
     }
 
     .portada {
-        width: 400px;
+        width: 290px;
         height: 350px;
     }
     .portada img:hover {
@@ -318,6 +333,18 @@ label {
         filter: contrast(120%);
     }
 
-
-
+    .cajaPrincipal {
+        margin: 25px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .comentario {
+        width: 300px;
+        height: 400px;
+    }
 }
+
+/* PARA TABLET
+@media (min-width:) */
