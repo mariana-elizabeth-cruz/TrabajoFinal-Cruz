@@ -9,8 +9,64 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <!-- menu de navegacion-->
+
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <!--  Logo de la página -->
+            <img src="../imagenes/logoApp.jpg" class="rounded-5 logo" alt="Logo Cine">
+            <!-- ----------------- -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- Lista de Menu -->
+                <nav class="offcanvas-body">
+                    <ul class="navbar-nav d-flex justify-content-evenly flex-grow-1 pe-3">
+                        <li class="nav-item ">
+                            <a class="nav-link active menuL" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle menuL" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categoria</a>
+                            <ul class="dropdown-menu dropdown-menu-dark " style="max-width: 230px;">
+                                
+                                <li>
+                                    <a class="dropdown-item lista" href="#">Acción y Ciencia ficción</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item lista" href="categoria.html">Comedia</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item lista" href="#">Drama y Romance</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menuL" href="paginas/estrenos.html">Estrenos</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link menuL" href="paginas/milista.html">Mi Lista</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link menuL" href="paginas/iniciarsesion.html">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                    <!-- Fin lista de menu -->
+                    <!-- Boton de busqueda -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-buscar" type="submit">Buscar</button>
+                    </form>
+                    <!-- ----------------- -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <header>
+
         <nav >
             <ul class="navLinks nav-flex">
                 <li>
@@ -30,7 +86,7 @@
                 </li>
             </ul>
         </nav>       
-    </header>
+    </header> -->
     
     <main>
         <h1 class="titulo">Categorias</h1>
