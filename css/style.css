@@ -6,6 +6,9 @@ body {
     /* background-color: #927caa; */
     /* background-color: #2d6e94; */
     /* #5181a6 */
+    background-color: #00091A;
+    /* background-color: #00041A; */
+
 }
 .navColor {
     background-color: #00151A;
@@ -24,7 +27,8 @@ body {
 }
 
 .menuL:hover {
-    color: #6c59a8;
+    color: #008099;
+    
 }
 
 .lista {
@@ -40,7 +44,7 @@ li {
 
 
 .btn-buscar {
-    background-color: #826b85;
+    background-color: #005f75;
     color: white;
     
 }
