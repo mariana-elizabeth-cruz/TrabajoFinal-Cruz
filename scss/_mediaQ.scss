@@ -1,0 +1,100 @@
+/* APLICANDO MEDIA QUERY */
+
+/* PARA TELEFONO */
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 50px;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .notiImg p {
+        margin: 30px;
+    }
+
+    .portada {
+        width: 290px;
+        height: 350px;
+    }
+
+    .portada img:hover {
+        cursor: pointer;
+        width: 200px;
+        filter: contrast(120%);
+    }
+
+    /* Imagenes de noticias */
+    .imgUno {
+        width: 250px;
+    }
+
+    .imgDos {
+        width: 250px;
+    }
+
+    .imgTres {
+        width: 250px;
+    }
+
+    /* comentario */
+    .cajaPrincipal {
+        margin: 25px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .comentario {
+        width: 300px;
+        height: 400px;
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .btnRedes {
+        font-size: 22px;
+        margin: 7px;
+    }
+
+    .footerText h4 {
+        font-size: 15px;
+    }
+
+    /* LOGIN */
+    .loginPadre {
+        width: 270px;
+        height: 450px;
+        margin: auto;
+
+    }
+}
+
+/* PARA TABLET */
+@media (min-width:768px) and (max-width:1023px) {
+
+    /* COMENTARIOS */
+    .cajaPrincipal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-content: space-around;
+    }
+
+    .comentario {
+        width: 210px;
+    }
+
+}

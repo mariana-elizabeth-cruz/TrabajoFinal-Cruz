@@ -1,0 +1,27 @@
+/* PIE DE PÁGINA */
+footer {
+    text-align: center;
+    background-color: $background-colorF_1;
+    height: 200px;
+    width: 100%;
+    display: grid;
+    align-items: end;
+}
+
+.footerLink {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btnRedes {
+    font-size: 30px;
+    color: $colorFooter_1;
+    margin: 15px;
+    padding: 20px;
+}
+
+.footerText {
+    color: $colorFooter_1;
+}
