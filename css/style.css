@@ -35,8 +35,9 @@ body {
     font-size: 15px;
 }
 .lista:hover{
-    background-color: #826b85;
+    background-color: #17535e;
     color: black;
+    font-weight: bold;
 }
 li {
     list-style: none;
@@ -407,3 +408,4 @@ footer {
         width: 250px;
     } */
 }
+
