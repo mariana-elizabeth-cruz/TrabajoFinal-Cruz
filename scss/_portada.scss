@@ -1,24 +1,36 @@
 /* Estilo para titulo y portada */
-.banner {
-    background-image: url("../imagenes/banner.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 980px;
+// .banner {
+//     background-image: url("../imagenes/banner.jpg");
+//     background-size: cover;
+//     width: 100%;
+//     height: 980px;
+    
+// }
+@mixin colorText {
+    color: $colorPortada_1;
+    padding-left: 35rem;
 }
 
 .titulo {
-    height: 300px;
     text-transform: uppercase;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    padding-top: 300px;
+    @include colorText;    
 }
 
 h1 {
-    font-size: 65px;
+    font-size: 7rem;
     font-weight: bold;
-    color: $colorPortada_1;
     line-height: 2;
     letter-spacing: 3px;
-    text-shadow: 2px 4px 10px #1c1a1f;
+    // text-shadow: 2px 4px 10px #3f6862ff;
+    text-shadow: 1px 1px 2px black,
+    2px 2px 25px #2e4e80,
+    2px 2px 5px #000095;
+}
+
+.banner .parrafo {
+    @include colorText;
+    font-size: $parrafo + 10px;
+    text-shadow: 1px 1px 2px black;
+
 }

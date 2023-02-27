@@ -1,22 +1,16 @@
 /* Acerca de nosotros*/
 .about {
-    border: 1px solid black;
-    border-radius: 60px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
     margin: 10px;
-    margin-bottom: 35px;
     padding: 15px;
 }
 
 .subTitulo {
     font-size: 40px;
     letter-spacing: 2px;
-    margin: 5px 80px 5px 35px;
     color: $color_1;
     font-weight: bold;
 }
-
-.parrafoUno {
-    margin: 5px 35px 5px 35px;
+.aboutTexto {
+    display: grid;
+    align-items: center;
 }

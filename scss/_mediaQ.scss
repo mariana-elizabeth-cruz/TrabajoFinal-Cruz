@@ -2,11 +2,18 @@
 
 /* PARA TELEFONO */
 @media (max-width: 600px) {
+    .logo {
+        width: 60px;
+    }
 
-    h1 {
-        font-size: 50px;
+// portada
+    .titulo{
+        font-size: 30px;
         line-height: 1;
-        text-align: center;
+        padding: 80px 0 0 0;
+    }
+    .banner .parrafo {
+        display: none;
     }
 
     .about {
@@ -86,6 +93,16 @@
 /* PARA TABLET */
 @media (min-width:768px) and (max-width:1023px) {
 
+    // portada
+    .titulo {
+        font-size: 4rem;
+        padding-top: 10rem;
+        padding-left: 0;
+    }
+    .banner .parrafo {
+        font-size: $parrafo;
+        padding-left: 0;
+    }
     /* COMENTARIOS */
     .cajaPrincipal {
         display: grid;

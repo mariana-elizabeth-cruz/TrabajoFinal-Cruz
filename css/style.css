@@ -3,7 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap");
 body {
   font-family: "Catamaran", sans-serif;
-  background-color: #00091A;
+  background-color: #367578;
+}
+
+.parrafo {
+  font-size: 20px;
 }
 
 /*estilo para el menu*/
@@ -50,51 +54,44 @@ Nav .btn-buscar:hover {
 }
 
 /* Estilo para titulo y portada */
-.banner {
-  background-image: url("../imagenes/banner.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 980px;
-}
-
 .titulo {
-  height: 300px;
   text-transform: uppercase;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  padding-top: 300px;
+  color: rgb(243, 237, 237);
+  padding-left: 35rem;
 }
 
 h1 {
-  font-size: 65px;
+  font-size: 7rem;
   font-weight: bold;
-  color: black;
   line-height: 2;
   letter-spacing: 3px;
-  text-shadow: 2px 4px 10px #1c1a1f;
+  text-shadow: 1px 1px 2px black, 2px 2px 25px #2e4e80, 2px 2px 5px #000095;
+}
+
+.banner .parrafo {
+  color: rgb(243, 237, 237);
+  padding-left: 35rem;
+  font-size: 30px;
+  text-shadow: 1px 1px 2px black;
 }
 
 /* Acerca de nosotros*/
 .about {
-  border: 1px solid black;
-  border-radius: 60px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
   margin: 10px;
-  margin-bottom: 35px;
   padding: 15px;
 }
 
 .subTitulo {
   font-size: 40px;
   letter-spacing: 2px;
-  margin: 5px 80px 5px 35px;
   color: black;
   font-weight: bold;
 }
 
-.parrafoUno {
-  margin: 5px 35px 5px 35px;
+.aboutTexto {
+  display: grid;
+  align-items: center;
 }
 
 /*Estilo para seccion noticias*/
@@ -257,10 +254,16 @@ footer {
 /* APLICANDO MEDIA QUERY */
 /* PARA TELEFONO */
 @media (max-width: 600px) {
-  h1 {
-    font-size: 50px;
+  .logo {
+    width: 60px;
+  }
+  .titulo {
+    font-size: 30px;
     line-height: 1;
-    text-align: center;
+    padding: 80px 0 0 0;
+  }
+  .banner .parrafo {
+    display: none;
   }
   .about {
     display: grid;
@@ -324,6 +327,15 @@ footer {
 }
 /* PARA TABLET */
 @media (min-width: 768px) and (max-width: 1023px) {
+  .titulo {
+    font-size: 4rem;
+    padding-top: 10rem;
+    padding-left: 0;
+  }
+  .banner .parrafo {
+    font-size: 20px;
+    padding-left: 0;
+  }
   /* COMENTARIOS */
   .cajaPrincipal {
     display: grid;
