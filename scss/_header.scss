@@ -12,9 +12,11 @@
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
+    transition: all 0.2s;
 
     &:hover {
         color: $colorNav_1;
+        font-size: 22px;
     }
 }
 
@@ -25,6 +27,7 @@
         background-color: $background-colorNav_2;
         color: $colorNav_2;
         font-weight: bold;
+        
     }
 }
 
@@ -35,11 +38,13 @@ li {
 .btn-buscar {
     background-color: $background-colorNav_3;
     color: $colorNav_3;
+    transition: all 0.2s;
 
     &:hover {
         background-color: $background-colorNav_4;
         color: $colorNav_2;
         border: 1px solid black;
         font-weight: bold;
+        font-size: 18px;
     }
 }

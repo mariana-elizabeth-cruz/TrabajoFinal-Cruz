@@ -24,9 +24,11 @@ body {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
+  transition: all 0.2s;
 }
 .menuL:hover {
   color: #008099;
+  font-size: 22px;
 }
 
 .lista {
@@ -45,12 +47,14 @@ li {
 Nav .btn-buscar {
   background-color: #005f75;
   color: white;
+  transition: all 0.2s;
 }
 Nav .btn-buscar:hover {
   background-color: #999999;
   color: black;
   border: 1px solid black;
   font-weight: bold;
+  font-size: 18px;
 }
 
 /* Estilo para titulo y portada */
@@ -85,12 +89,7 @@ h1 {
 .aboutSombra {
   box-shadow: 10px 10px 30px #000000;
   box-shadow: ejeX ejeY difumasion color;
-  transition: all 0.3s;
-}
-
-.aboutSombra:hover {
-  height: 400px;
-  width: 100%;
+  background-color: #678282;
 }
 
 .subTitulo {
@@ -110,27 +109,18 @@ h1 {
   border: 1px solid black;
   border-radius: 60px;
   padding-top: 15px;
-  display: flex;
-  flex-direction: column;
 }
 
 .boxNoti h2 {
   font-size: 40px;
   letter-spacing: 2px;
   color: black;
-  text-align: center;
   font-weight: bold;
   margin: 15px;
   padding: 10px;
 }
 
 /* Caja de imagenes y parrafos */
-.boxNotiDos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
 /* caja individuales */
 .notiImg {
   width: 450px;
@@ -243,6 +233,12 @@ footer {
 
 .divHijo {
   text-align: center;
+}
+
+/* Estilo para seccion Mi lista */
+.imgLista {
+  width: 650px;
+  height: 400px;
 }
 
 /* Estilo para seccion Login */

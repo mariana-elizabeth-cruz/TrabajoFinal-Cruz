@@ -4,8 +4,8 @@
     border: 1px solid black;
     border-radius: 60px;
     padding-top: 15px;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
 }
 
 .boxNoti {
@@ -13,18 +13,17 @@
         font-size: 40px;
         letter-spacing: 2px;
         color: $color_1;
-        text-align: center;
         font-weight: bold;
         margin: 15px;
         padding: 10px;
     }
 }
 /* Caja de imagenes y parrafos */
-.boxNotiDos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+// .boxNotiDos {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-evenly;
+// }
 /* caja individuales */
 .notiImg {
     width: 450px;
