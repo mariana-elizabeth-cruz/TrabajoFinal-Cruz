@@ -104,16 +104,24 @@ h1 {
   align-items: center;
 }
 
+/*Estilo caja Info extra*/
+.infoExtra {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 /*Estilo para seccion noticias*/
 .noticias {
   padding-top: 15px;
 }
 
-.boxNoti {
+.boxSubtitulo {
   margin: 10px;
   padding: 15px;
 }
-.boxNoti h2 {
+.boxSubtitulo h2 {
   font-size: 40px;
   letter-spacing: 2px;
   color: black;
@@ -141,26 +149,20 @@ h1 {
   margin-top: 5px;
 }
 
-/* Caja de imagenes y parrafos */
-/* caja individuales */
-.notiImg {
-  width: 450px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.boxComentario {
+  background: linear-gradient(45deg, #669ac1, #ace3a1);
+  transition: all 0.2s;
 }
-.notiImg p {
-  margin-top: 15px;
+.boxComentario h5 {
+  font-weight: bold;
 }
-
-/* imagenes */
-/*Estilo caja comentarios*/
-.infoExtra {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.boxComentario p {
+  font-weight: bold;
+}
+.boxComentario:hover {
+  width: 460px;
+  height: 160px;
+  cursor: pointer;
 }
 
 /* PIE DE PÁGINA */

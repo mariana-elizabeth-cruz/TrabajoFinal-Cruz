@@ -120,11 +120,11 @@
         </section>
 
         <!-- INFO EXTRA -->
-        <div class="container text-center infoExtra">
+        <div class="container-fluid text-center infoExtra">
             <div class="row">
                 <!-- seccion noticias -->
                 <div class="col-sm-6 col-md-6 col-lg-8 noticias">
-                    <div class="boxNoti">
+                    <div class="boxSubtitulo">
                         <h2>Últimas noticias</h2>
                     </div>
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
@@ -134,27 +134,30 @@
                             <a href="#">
                                 <img class="imagen" src="imagenes/noti1.jpg" alt="Noticia sobre Euphoria">
                             </a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nam!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse adipisci necessitatibus totam autem veritatis blanditiis nobis ullam quas enim? Soluta saepe consequuntur atque, magni repudiandae delectus harum voluptatibus et officiis.</p>
                         </div>
                         <div class="boxImg">
                             <a href="#">
                                 <img class="imgDos" src="imagenes/noti2.jpg" alt="Noticia sobre Heartstopper">
                             </a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nam!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse adipisci necessitatibus totam autem veritatis blanditiis nobis ullam quas enim? Soluta saepe consequuntur atque, magni repudiandae delectus harum voluptatibus et officiis.</p>
                         </div>
                         <div class="boxImg">
                             <a href="#">
                                 <img class="imgTres" src="imagenes/noti3.png" alt="Noticia sobre Stranger Things">
                             </a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nam!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse adipisci necessitatibus totam autem veritatis blanditiis nobis ullam quas enim? Soluta saepe consequuntur atque, magni repudiandae delectus harum voluptatibus et officiis.</p>
                         </div>
                     </div>
                 </div>
                 <!-- seccion comentarios -->
                 <div class="col-sm-6 col-md-5 offset-md-1 col-lg-4 offset-lg-0">
-                    <div class="row row-cols-1 row-cols-md-1 offset-md-1 g-4">
+                    <div class="row row-cols-1 row-cols-md-1 offset-md-1 g-3">
+                        <div class="boxSubtitulo">
+                            <h2>Comentario</h2>
+                        </div>
                         <div class="col">
-                            <div class="card">
+                            <div class="card boxComentario">
                                 <div class="card-body">
                                     <h5 class="card-title">Nombre de usuario</h5>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -163,7 +166,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card">
+                            <div class="card boxComentario">
                                 <div class="card-body">
                                     <h5 class="card-title">Nombre de usuario</h5>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -172,7 +175,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card">
+                            <div class="card boxComentario">
                                 <div class="card-body">
                                     <h5 class="card-title">Nombre de usuario</h5>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
@@ -181,12 +184,33 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card">                    
-                                <div class="card-body">
-                                    <h5 class="card-title">Nombre de usuario</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Hacer un comentario</button>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title fs-5" id="exampleModalLabel">New message</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
+                                <div class="modal-body">
+                                    <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                </div>
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
