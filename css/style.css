@@ -165,25 +165,46 @@ h1 {
   cursor: pointer;
 }
 
-/* PIE DE PÁGINA */
-footer {
-  text-align: center;
-  background-color: #202020;
-  height: 200px;
-  width: 100%;
-  display: grid;
-  align-items: end;
+.btn_modal {
+  background-color: #005f75;
+  color: white;
+  transition: all 0.2s;
+}
+.btn_modal:hover {
+  background-color: #999999;
+  color: black;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.footerLink {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+/* PIE DE PÁGINA */
+footer {
+  background-color: #202020;
+  width: 100%;
+}
+
+footer .footerLink {
+  margin: 15px;
+  padding: 10px;
+}
+
+.footerLink a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footerLink a:hover {
+  font-weight: bold;
+  color: #008099;
+}
+
+.footerLink li {
+  margin-left: 250px;
 }
 
 .btnRedes {
-  font-size: 30px;
+  font-size: 25px;
   color: #a8a8a8;
   margin: 15px;
   padding: 20px;
@@ -191,6 +212,7 @@ footer {
 
 .footerText {
   color: #a8a8a8;
+  text-align: center;
 }
 
 /* Estilo para seccion de categorias */

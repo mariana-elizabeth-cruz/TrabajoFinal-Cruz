@@ -1,22 +1,27 @@
 /* PIE DE PÁGINA */
 footer {
-    text-align: center;
     background-color: $background-colorF_1;
-    height: 200px;
     width: 100%;
-    display: grid;
-    align-items: end;
 }
 
-.footerLink {
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+footer .footerLink {
+    margin: 15px;
+    padding: 10px;
+}
+.footerLink a {
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.footerLink a:hover {
+    font-weight: bold;
+    color: $colorNav_1;
+}
+.footerLink li {
+    margin-left: 250px;
 }
 
 .btnRedes {
-    font-size: 30px;
+    font-size: 25px;
     color: $colorFooter_1;
     margin: 15px;
     padding: 20px;
@@ -24,4 +29,5 @@ footer {
 
 .footerText {
     color: $colorFooter_1;
+    text-align: center;
 }

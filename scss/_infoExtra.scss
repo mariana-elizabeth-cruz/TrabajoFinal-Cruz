@@ -66,6 +66,9 @@
         cursor: pointer;
     }
 }
+.btn_modal {
+    @include botones;
+}
 
 
 
