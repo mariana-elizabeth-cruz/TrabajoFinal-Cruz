@@ -106,11 +106,13 @@ h1 {
 
 /*Estilo para seccion noticias*/
 .noticias {
-  border: 1px solid black;
-  border-radius: 60px;
   padding-top: 15px;
 }
 
+.boxNoti {
+  margin: 10px;
+  padding: 15px;
+}
 .boxNoti h2 {
   font-size: 40px;
   letter-spacing: 2px;
@@ -118,6 +120,25 @@ h1 {
   font-weight: bold;
   margin: 15px;
   padding: 10px;
+}
+
+.boxImagenes {
+  display: flex;
+  justify-content: center;
+}
+
+.boxImg {
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  border-radius: 15px;
+}
+.boxImg img {
+  width: 250px;
+  height: 220px;
+  margin: 10px 15px 10px 15px;
+  border-radius: 15px;
+}
+.boxImg p {
+  margin-top: 5px;
 }
 
 /* Caja de imagenes y parrafos */
@@ -134,46 +155,12 @@ h1 {
 }
 
 /* imagenes */
-.imgUno {
-  width: 375px;
-}
-
-.imgDos {
-  width: 370px;
-}
-
-.imgTres {
-  width: 360px;
-}
-
 /*Estilo caja comentarios*/
-.cajaPrincipal {
-  margin: 25px;
-  padding: 15px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  justify-items: center;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.comentario {
-  border: 1px solid black;
-  width: 400px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
-  flex-wrap: wrap;
-}
-
-.subComentario {
-  font-size: 40px;
-  letter-spacing: 2px;
-  margin: 15px 5px 15px 5px;
-  padding: 10px;
-  color: black;
+.infoExtra {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* PIE DE PÁGINA */
@@ -344,14 +331,6 @@ footer {
     padding-left: 0;
   }
   /* COMENTARIOS */
-  .cajaPrincipal {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    justify-content: space-around;
-  }
-  .comentario {
-    width: 210px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

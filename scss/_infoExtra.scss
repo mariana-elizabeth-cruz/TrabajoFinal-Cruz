@@ -1,0 +1,105 @@
+/*Estilo para seccion noticias*/
+
+.noticias {
+    padding-top: 15px;
+
+}
+
+.boxNoti {
+    margin: 10px;
+    padding: 15px;
+    h2 {
+        font-size: 40px;
+        letter-spacing: 2px;
+        color: $color_1;
+        font-weight: bold;
+        margin: 15px;
+        padding: 10px;
+    }
+}
+
+//Imagenes noticias 
+.boxImagenes {
+    display: flex;
+    justify-content: center;
+}
+
+.boxImg {
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    border-radius: 15px;
+
+    img {
+        width: 250px;
+        height: 220px;
+        margin: 10px 15px 10px 15px;
+        border-radius: 15px;
+    }
+
+    p {
+        margin-top: 5px;
+    }
+}
+
+/* Caja de imagenes y parrafos */
+// .boxNotiDos {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-evenly;
+// }
+/* caja individuales */
+.notiImg {
+    width: 450px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        margin-top: 15px;
+    }
+}
+
+/* imagenes */
+// .imgUno {
+//     width: 375px;
+// }
+
+// .imgDos {
+//     width: 370px;
+// }
+
+// .imgTres {
+//     width: 360px;
+// }
+
+/*Estilo caja comentarios*/
+.infoExtra {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    // display: grid;
+    // grid-template-columns: 2fr 1fr;
+    // justify-items: center;
+    // align-items: center;
+    // justify-content: space-around;
+}
+
+// .comentario {
+//     border: 1px solid black;
+//     width: 400px;
+//     height: 500px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: end;
+//     flex-wrap: wrap;
+// }
+
+// .subComentario {
+//     font-size: 40px;
+//     letter-spacing: 2px;
+//     margin: 15px 5px 15px 5px;
+//     padding: 10px;
+//     color: $color_1;
+// }
