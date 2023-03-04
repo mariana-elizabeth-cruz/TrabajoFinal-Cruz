@@ -15,11 +15,15 @@
     .banner .parrafo {
         display: none;
     }
-
+    //Seccion about
     .about {
         display: grid;
         grid-template-columns: 1fr;
     }
+    // .subtitulo {
+
+    // }
+
 
     .notiImg p {
         margin: 30px;
@@ -104,14 +108,14 @@
         padding-left: 0;
     }
     /* COMENTARIOS */
-    .cajaPrincipal {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        justify-content: space-around;
-    }
+    // .cajaPrincipal {
+    //     display: grid;
+    //     grid-template-columns: 2fr 1fr;
+    //     justify-content: space-around;
+    // }
 
-    .comentario {
-        width: 210px;
-    }
+    // .comentario {
+    //     width: 210px;
+    // }
 
 }

@@ -24,9 +24,11 @@ body {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
+  transition: all 0.2s;
 }
 .menuL:hover {
   color: #008099;
+  font-size: 22px;
 }
 
 .lista {
@@ -45,12 +47,14 @@ li {
 Nav .btn-buscar {
   background-color: #005f75;
   color: white;
+  transition: all 0.2s;
 }
 Nav .btn-buscar:hover {
   background-color: #999999;
   color: black;
   border: 1px solid black;
   font-weight: bold;
+  font-size: 18px;
 }
 
 /* Estilo para titulo y portada */
@@ -78,8 +82,14 @@ h1 {
 
 /* Acerca de nosotros*/
 .about {
-  margin: 10px;
-  padding: 15px;
+  margin: 15px;
+  padding: 25px;
+}
+
+.aboutSombra {
+  box-shadow: 10px 10px 30px #000000;
+  box-shadow: ejeX ejeY difumasion color;
+  background-color: #678282;
 }
 
 .subTitulo {
@@ -94,106 +104,107 @@ h1 {
   align-items: center;
 }
 
-/*Estilo para seccion noticias*/
-.noticias {
-  border: 1px solid black;
-  border-radius: 60px;
+/*Estilo caja Info extra*/
+.infoExtra {
+  margin-top: 25px;
+  margin-bottom: 25px;
   padding-top: 15px;
-  display: flex;
-  flex-direction: column;
+  padding-bottom: 15px;
 }
 
-.boxNoti h2 {
+/*Estilo para seccion noticias*/
+.noticias {
+  padding-top: 15px;
+}
+
+.boxSubtitulo {
+  margin: 10px;
+  padding: 15px;
+}
+.boxSubtitulo h2 {
   font-size: 40px;
   letter-spacing: 2px;
   color: black;
-  text-align: center;
   font-weight: bold;
   margin: 15px;
   padding: 10px;
 }
 
-/* Caja de imagenes y parrafos */
-.boxNotiDos {
+.boxImagenes {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-/* caja individuales */
-.notiImg {
-  width: 450px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.boxImg {
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  border-radius: 15px;
 }
-.notiImg p {
-  margin-top: 15px;
+.boxImg img {
+  width: 250px;
+  height: 220px;
+  margin: 10px 15px 10px 15px;
+  border-radius: 15px;
 }
-
-/* imagenes */
-.imgUno {
-  width: 375px;
+.boxImg p {
+  margin-top: 5px;
 }
 
-.imgDos {
-  width: 370px;
+.boxComentario {
+  background: linear-gradient(45deg, #669ac1, #ace3a1);
+  transition: all 0.2s;
+}
+.boxComentario h5 {
+  font-weight: bold;
+}
+.boxComentario p {
+  font-weight: bold;
+}
+.boxComentario:hover {
+  width: 460px;
+  height: 160px;
+  cursor: pointer;
 }
 
-.imgTres {
-  width: 360px;
+.btn_modal {
+  background-color: #005f75;
+  color: white;
+  transition: all 0.2s;
 }
-
-/*Estilo caja comentarios*/
-.cajaPrincipal {
-  margin: 25px;
-  padding: 15px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  justify-items: center;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.comentario {
-  border: 1px solid black;
-  width: 400px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
-  flex-wrap: wrap;
-}
-
-.subComentario {
-  font-size: 40px;
-  letter-spacing: 2px;
-  margin: 15px 5px 15px 5px;
-  padding: 10px;
+.btn_modal:hover {
+  background-color: #999999;
   color: black;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /* PIE DE PÁGINA */
 footer {
-  text-align: center;
   background-color: #202020;
-  height: 200px;
   width: 100%;
-  display: grid;
-  align-items: end;
 }
 
-.footerLink {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+footer .footerLink {
+  margin: 15px;
+  padding: 10px;
+}
+
+.footerLink a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footerLink a:hover {
+  font-weight: bold;
+  color: #008099;
+}
+
+.footerLink li {
+  margin-left: 250px;
 }
 
 .btnRedes {
-  font-size: 30px;
+  font-size: 25px;
   color: #a8a8a8;
   margin: 15px;
   padding: 20px;
@@ -201,6 +212,7 @@ footer {
 
 .footerText {
   color: #a8a8a8;
+  text-align: center;
 }
 
 /* Estilo para seccion de categorias */
@@ -232,6 +244,12 @@ footer {
 
 .divHijo {
   text-align: center;
+}
+
+/* Estilo para seccion Mi lista */
+.imgLista {
+  width: 650px;
+  height: 400px;
 }
 
 /* Estilo para seccion Login */
@@ -337,14 +355,6 @@ footer {
     padding-left: 0;
   }
   /* COMENTARIOS */
-  .cajaPrincipal {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    justify-content: space-around;
-  }
-  .comentario {
-    width: 210px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Las mejores series las vas a encontrar en nuestra plataforma. Para todos los gustos y edades.">
     <title>Veamos una serie</title>
+    <!-- Logo -->
+    <link rel="shortcut icon" href="imagenes/logoApp.png" type="image/x-icon">
     <!-- link css bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Link css -->
@@ -14,12 +17,11 @@
 
 </head>
 <body>
-
-    <!-- <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> -->
-        <header class="navbar navbar-expand-lg navbar-dark navColor fixed-top">
+    <!-- Seccion de menu -->
+    <header class="navbar navbar-expand-lg navbar-dark navColor fixed-top">
         <div class="container-fluid">
             <!--  Logo de la página -->
-            <img src="imagenes/logoApp.jpg" class="rounded-5 logo" alt="Logo Cine">
+            <img src="imagenes/logoApp.png" class="rounded-5 logo" alt="Logo Cine">
             <!-- ----------------- -->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -72,12 +74,7 @@
     </header>
 
     <main>
-        <!-- <div class="banner">
-            <div class="titulo">
-                <h1>Bienvenidos</h1>
-                
-            </div>
-        </div> -->
+        <!-- Portada -->
         <div class="card bg-dark text-center" >
             <img src="imagenes/banner.jpg" class="card-img " alt="...">
             <div class="card-img-overlay banner">
@@ -85,9 +82,6 @@
                 <p class="card-text parrafo">Estas tirado en el sofa y queres ver una buena serie y no sabes cual &#128521 Aqui te recomendamos las mejores series.</p>
             </div>
         </div>
-
-        
-        
 
         <!-- <section class="boxPortada">
             <div class="portada">
@@ -101,11 +95,10 @@
         
         <!-- seccion sobre la página -->
         <section class="about">
-            <div class="card mb-0" style="max-width: 100%;">
-                <!-- <div class="row row-cols-1 row-cols-md-2 g-4"> -->
-                    <div class="row g-0 text-center">
+            <div class="card mb-0 aboutSombra" style="max-width: 100%;">
+                <div class="row g-0 text-center">
                     <div class="col-6 col-md-4">
-                        <img src="imagenes/aboutDos.jpg" class="img-fluid rounded-start" alt="Imagen mujer sentada en el sofa">
+                        <img src="imagenes/aboutDos.jpg" class="img-fluid rounded-start" alt="Personas sentadas en el sofa mirando el televisor">
                     </div>
                     <div class="col-sm-6 col-md-8 aboutTexto">
                         <div class="card-body">
@@ -116,41 +109,131 @@
                                 <p class="card-text parrafo">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore tempore quo vitae totam iure voluptate nulla magnam rerum! Veniam reiciendis fuga laborum a odio optio dolorum suscipit accusamus ad mollitia!
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus laudantium iste cupiditate repellendus totam vero veritatis, fugit officiis neque maxime. Amet repellendus quae minus vel. </p>
-                            </div>
-                            
-                            
+                            </div>                            
                         </div>
                     </div>
                 </div>
             </div>
-            
         </section>
 
-        <!-- seccion noticias -->
-        <section class="noticias">
-            <div class="boxNoti">
-                <h2>Últimas noticias</h2>
+        <!-- INFO EXTRA -->
+        <div class="container-fluid text-center infoExtra">
+            <div class="row">
+                <!-- seccion noticias -->
+                <div class="col-sm-6 col-md-6 col-lg-8 noticias">
+                    <div class="boxSubtitulo">
+                        <h2>Últimas noticias</h2>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                    <!-- <div class="container"> -->
+                        <div class="boxImg">
+                        <!-- <div class="col boxImg"> -->
+                            <a href="#">
+                                <img class="imagen" src="imagenes/noti1.jpg" alt="Noticia sobre Euphoria">
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse adipisci necessitatibus totam autem veritatis blanditiis nobis ullam quas enim? Soluta saepe consequuntur atque, magni repudiandae delectus harum voluptatibus et officiis.</p>
+                        </div>
+                        <div class="boxImg">
+                            <a href="#">
+                                <img class="imgDos" src="imagenes/noti2.jpg" alt="Noticia sobre Heartstopper">
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse adipisci necessitatibus totam autem veritatis blanditiis nobis ullam quas enim? Soluta saepe consequuntur atque, magni repudiandae delectus harum voluptatibus et officiis.</p>
+                        </div>
+                        <div class="boxImg">
+                            <a href="#">
+                                <img class="imgTres" src="imagenes/noti3.png" alt="Noticia sobre Stranger Things">
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse adipisci necessitatibus totam autem veritatis blanditiis nobis ullam quas enim? Soluta saepe consequuntur atque, magni repudiandae delectus harum voluptatibus et officiis.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- seccion comentarios -->
+                <div class="col-sm-6 col-md-5 offset-md-1 col-lg-4 offset-lg-0">
+                    <div class="row row-cols-1 row-cols-md-1 offset-md-1 g-3">
+                        <div class="boxSubtitulo">
+                            <h2>Comentario</h2>
+                        </div>
+                        <div class="col">
+                            <div class="card boxComentario">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nombre de usuario</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card boxComentario">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nombre de usuario</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card boxComentario">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nombre de usuario</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn_modal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Hacer un comentario</button>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title fs-5" id="exampleModalLabel">New message</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="boxNotiDos">
-                <div class="notiImg">
-                    <img class="imgUno" src="imagenes/noti1.jpg" alt="Noticia sobre Euphoria">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, debitis!</p>
-                </div>
-                <div class="notiImg">
-                    <img class="imgDos" src="imagenes/noti2.png" alt="Noticia sobre Heartstopper">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eius.</p>
-                </div>
-                <div class="notiImg">
-                    <img class="imgTres" src="imagenes/noti3.png" alt="Noticia sobre Stranger Things">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                </div>
+        </div>
+
+        <!-- <div class="boxNotiDos">
+            <div class="notiImg">
+                <img class="imgUno" src="imagenes/noti1.jpg" alt="Noticia sobre Euphoria">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, debitis!</p>
             </div>
-        </section>
-        
+            <div class="notiImg">
+                <img class="imgDos" src="imagenes/noti2.png" alt="Noticia sobre Heartstopper">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eius.</p>
+            </div>
+            <div class="notiImg">
+                <img class="imgTres" src="imagenes/noti3.png" alt="Noticia sobre Stranger Things">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+        </div> -->
+
+
         <!-- seccion comentarios -->
         
-        <section class="cajaPrincipal">
+        <!-- <section class="cajaPrincipal">
 
             <div class="row row-cols-1 row-cols-md-1 offset-md-1 g-4">
                 <div class="col">
@@ -214,40 +297,41 @@
                     </div>
                 </div>                                    
             </div>
-        </section>
+        </section> -->
     </main>
 
-    <footer>
-        <div>
-            <ul class="footerLink">
-                <li>
-                    <a href="https://www.facebook.com/" class="btnRedes" target="_blank">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" class="btnRedes" target="_blank">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com" class="btnRedes" target="_blank">
-                        <i class="bi bi-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com" class="btnRedes" target="_blank">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        
-        <div class="footerText">
-            <h4>Veamos una serie | © Todos los derechos reservados 2023</h4>
-            <h4>Santiago del Estero, Argentina</h4>
-        </div>
+    <footer >
+        <div class="row">
+            <div class="col align-self-center">
+                <ul class="footerLink">
+                    <li>
+                        <a href="https://www.facebook.com/" class="btnRedes" target="_blank">
+                            <i class="bi bi-facebook"> Facebook</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" class="btnRedes" target="_blank">
+                            <i class="bi bi-instagram"> Instagram</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com" class="btnRedes" target="_blank">
+                            <i class="bi bi-twitter"> Twitter</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com" class="btnRedes" target="_blank">
+                            <i class="bi bi-youtube"> YouTube</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col align-self-center footerText">
+                <h4>Veamos una serie | © Todos los derechos reservados 2023</h4>
+                <h4>Santiago del Estero, Argentina</h4>
+            </div>
 
+        </div>
     </footer>
 
     <!-- link js de bootstrap -->
