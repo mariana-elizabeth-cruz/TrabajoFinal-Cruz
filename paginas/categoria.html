@@ -35,20 +35,8 @@
                         <li class="nav-item ">
                             <a class="nav-link active menuL" aria-current="page" href="../index.html">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle menuL" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categoria</a>
-                            <ul class="dropdown-menu dropdown-menu-dark " style="max-width: 230px;">
-                                
-                                <li>
-                                    <a class="dropdown-item lista" href="#">Acción y Ciencia ficción</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item lista" href="comedia.html">Comedia</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item lista" href="#">Drama y Romance</a>
-                                </li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link menuL" href="categoria.html">Categoria</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menuL" href="./estrenos.html">Estrenos</a>
@@ -73,10 +61,50 @@
     </header>
 
     <main>
-        <div class="titulo">
+        <!-- <div class="titulo">
             <h1>Categorias</h1>
+        </div> -->
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../imagenes/catUno.png" class="d-block w-100" alt="Imagen de serie How I met your mother">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Comedia</h1>
+                        <p class="textoP">Las mejores series de Comedia las encontras aquí. Ideal para un fin de semana solo/a o en compañia!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/catDos.jpg" class="d-block w-100" alt="Imagen de serie Halo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Ciencia Ficción</h1>
+                        <p class="textoP">Con estas series no vas a querer moverte del sillón. Ideal para un fin de semana solo/a o en compañia!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/catTres.jpg" class="d-block w-100" alt="Imagen de serie Grey's anatomy">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Drama y Romance</h1>
+                        <p class="textoP">Estas buscando emoción aquí vas a encontrar lo que estas buscando. Ideal para un fin de semana solo/a o en compañia!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        
+
+
         <h2 class="subTitulo">Comedia</h2>
         <div class="boxCategoria">
             <h2>De la A a la Z</h2>
@@ -100,37 +128,37 @@
 
     </main>
     
-    <footer>
-        <div>
-            <ul class="footerLink">
-                <li>
-                    <a href="https://www.facebook.com/" class="btnRedes" target="_blank">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" class="btnRedes" target="_blank">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com" class="btnRedes" target="_blank">
-                        <i class="bi bi-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com" class="btnRedes" target="_blank">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                </li>
-            </ul>
+    <footer >
+        <div class="row">
+            <div class="col align-self-center">
+                <ul class="footerLink">
+                    <li>
+                        <a href="https://www.facebook.com/" class="btnRedes" target="_blank">
+                            <i class="bi bi-facebook"> Facebook</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" class="btnRedes" target="_blank">
+                            <i class="bi bi-instagram"> Instagram</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com" class="btnRedes" target="_blank">
+                            <i class="bi bi-twitter"> Twitter</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com" class="btnRedes" target="_blank">
+                            <i class="bi bi-youtube"> YouTube</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col align-self-center footerText">
+                <h4>Veamos una serie | © Todos los derechos reservados 2023</h4>
+                <h4>Santiago del Estero, Argentina</h4>
+            </div>
         </div>
-        
-        <div class="footerText">
-            <h4>Veamos una serie | © Todos los derechos reservados 2023</h4>
-            <h4>Santiago del Estero, Argentina</h4>
-        </div>
-
     </footer>
 
     <!-- link js de bootstrap -->

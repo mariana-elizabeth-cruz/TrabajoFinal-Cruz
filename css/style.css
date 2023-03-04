@@ -31,15 +31,6 @@ body {
   font-size: 22px;
 }
 
-.lista {
-  font-size: 15px;
-}
-.lista:hover {
-  background-color: #17535e;
-  color: black;
-  font-weight: bold;
-}
-
 li {
   list-style: none;
 }
@@ -76,6 +67,12 @@ h1 {
 .banner .parrafo {
   color: rgb(243, 237, 237);
   padding-left: 35rem;
+  font-size: 30px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.textoP {
+  color: rgb(243, 237, 237);
   font-size: 30px;
   text-shadow: 1px 1px 2px black;
 }
@@ -183,7 +180,6 @@ footer {
   background-color: #202020;
   width: 100%;
 }
-
 footer .footerLink {
   margin: 15px;
   padding: 10px;
@@ -193,12 +189,10 @@ footer .footerLink {
   text-decoration: none;
   transition: all 0.3s;
 }
-
 .footerLink a:hover {
   font-weight: bold;
   color: #008099;
 }
-
 .footerLink li {
   margin-left: 250px;
 }

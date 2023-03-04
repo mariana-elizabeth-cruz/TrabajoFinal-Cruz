@@ -1,33 +1,41 @@
 /* PIE DE PÁGINA */
+@mixin textoFooter {
+    color: $colorFooter_1;
+}
 footer {
     background-color: $background-colorF_1;
     width: 100%;
+
+    .footerLink {
+        margin: 15px;
+        padding: 10px;
+    }
 }
 
-footer .footerLink {
-    margin: 15px;
-    padding: 10px;
-}
-.footerLink a {
-    text-decoration: none;
-    transition: all 0.3s;
-}
-.footerLink a:hover {
-    font-weight: bold;
-    color: $colorNav_1;
-}
-.footerLink li {
-    margin-left: 250px;
+.footerLink {
+    a {
+        text-decoration: none;
+        transition: all 0.3s;
+
+        &:hover {
+            font-weight: bold;
+            color: $colorNav_1;
+        }
+    }
+
+    li {
+        margin-left: 250px;
+    }
 }
 
 .btnRedes {
     font-size: 25px;
-    color: $colorFooter_1;
+    @include textoFooter;
     margin: 15px;
     padding: 20px;
 }
 
 .footerText {
-    color: $colorFooter_1;
+    @include textoFooter;
     text-align: center;
 }
