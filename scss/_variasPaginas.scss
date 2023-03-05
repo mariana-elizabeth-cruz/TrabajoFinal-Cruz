@@ -12,34 +12,37 @@
     }
 }
 
-.serie1 {
-    width: 340px;
-    height: 420px;
-}
-
-.serie3 {
-    width: 320px;
-    height: 430px;
-}
-
-.serie4 {
-    width: 300px;
-    height: 430px;
-}
-
-.boxCategoria {
-    margin: 15px;
-    padding: 10px;
-}
-
 /* Estilos para seccion de estrenos */
-.divPadre {
-    margin: 20px;
-    padding: 10px;
+.tituloE {
+    margin-top: 40px;
+    padding-top: 35px;
+}
+.boxPortada {
+    display: grid;
+    place-items: center;
+    height: 700px;
 }
 
-.divHijo {
-    text-align: center;
+.portada {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 630px;
+
+    img {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 0.8;
+        transition: .5s ease;
+
+        &:hover {
+            cursor: pointer;
+            width: 350px;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+    }
 }
 
 /* Estilo para seccion Mi lista */
