@@ -1,4 +1,17 @@
 /* Estilo para seccion de categorias */
+.categoria {
+    margin: 20px;
+    padding: 10px;
+}
+.boxSubtitulo {
+    @include subtitulos;
+
+    p {
+        font-size: $parrafo + 15px;
+        font-weight: bold;
+    }
+}
+
 .serie1 {
     width: 340px;
     height: 420px;

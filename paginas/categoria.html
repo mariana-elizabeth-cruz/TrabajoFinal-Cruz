@@ -17,6 +17,7 @@
 </head>
 <body>
 
+    <!-- Menu de opciones -->
     <header class="navbar navbar-expand-lg navbar-dark navColor fixed-top">
         <div class="container-fluid">
             <!--  Logo de la página -->
@@ -55,16 +56,13 @@
                         <button class="btn btn-buscar" type="submit">Buscar</button>
                     </form>
                     <!-- ----------------- -->
-                </div>
+                </nav>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
-        <!-- <div class="titulo">
-            <h1>Categorias</h1>
-        </div> -->
-
+        <!-- Carousel Portada -->
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -73,17 +71,17 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
+                    <img src="../imagenes/catDos.jpg" class="d-block w-100" alt="Imagen de serie Halo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Acción</h1>
+                        <p class="textoP">Con estas series no vas a querer moverte del sillón. Ideal para un fin de semana solo/a o en compañia!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
                     <img src="../imagenes/catUno.png" class="d-block w-100" alt="Imagen de serie How I met your mother">
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Comedia</h1>
                         <p class="textoP">Las mejores series de Comedia las encontras aquí. Ideal para un fin de semana solo/a o en compañia!</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="../imagenes/catDos.jpg" class="d-block w-100" alt="Imagen de serie Halo">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1>Ciencia Ficción</h1>
-                        <p class="textoP">Con estas series no vas a querer moverte del sillón. Ideal para un fin de semana solo/a o en compañia!</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -104,27 +102,150 @@
             </button>
         </div>
 
+        <!-- Secciones de la Categoria -->
+        <div class="text-center boxSubtitulo">
+            <h2>Acción y Ciencia Ficción</h2>
+            <p>De la A a la Z</p>
+        </div>
 
-        <h2 class="subTitulo">Comedia</h2>
-        <div class="boxCategoria">
-            <h2>De la A a la Z</h2>
-            <div class="cartelera">
-                <img class="serie1" src="../imagenes/serie1.jpg" alt="Serie The Office">
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="cartelera">
-                <img class="serie2" src="../imagenes/serie2.jpg" alt="Serie Moon Night">
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="cartelera">
-                <img class="serie3" src="../imagenes/serie3.jpg" alt="Serie How I met your mother">
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="cartelera">
-                <img class="serie4" src="../imagenes/serie4.jpg" alt="Serie Malcolm in the middle">
-                <p>Lorem ipsum dolor sit amet.</p>
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-md-4 g-4 categoria">
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="../imagenes/Halo.jpg" class="card-img-top" alt="Serie Halo">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../imagenes/altered_carbon.jpg" class="card-img-top" alt="Serie Altered Carbon">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a short card.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../imagenes/houseofthedragon.jpg" class="card-img-top" alt="Serie House of the Dragon">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../imagenes/lastofus.jpg" class="card-img-top" alt="Serie The Last of us">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        <!-- Fin seccion Accion -->
+
+        <div class="text-center boxSubtitulo">
+            <h2>Comedia</h2>
+            <p>De la A a la Z</p>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-md-4 g-4 categoria">
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="../imagenes/how-i-met.jpg" class="card-img-top" alt="Serie How I met your mother">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../imagenes/malcolm.jpg" class="card-img-top" alt="Serie Malcolm in the middle">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a short card.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../imagenes/Peacemaker_Serie.jpg" class="card-img-top" alt="Serie Peacemaker">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../imagenes/After_Life.jpg" class="card-img-top" alt="Serie After life">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fin seccion Comedia -->
+        
+        <div class="text-center boxSubtitulo">
+            <h2>Drama y Romance</h2>
+            <p>De la A a la Z</p>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-md-4 g-4 categoria">
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="../imagenes/Heartstopper.jpg" class="card-img-top" alt="Serie Heartstopper">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../imagenes/Ozark.jpg" class="card-img-top" alt="Serie Ozark">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a short card.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../imagenes/Start_Up.jpg" class="card-img-top" alt="Serie Start Up">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../imagenes/thisIsUs.jpg" class="card-img-top" alt="Serie This is us">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fin seccion Drama -->
 
     </main>
     

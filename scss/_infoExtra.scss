@@ -1,3 +1,16 @@
+@mixin subtitulos {
+    margin: 10px;
+    padding: 15px;
+    
+    h2 {
+        font-size: 40px;
+        letter-spacing: 2px;
+        color: $color_1;
+        font-weight: bold;
+        margin: 15px;
+        padding: 10px;
+    }
+}
 /*Estilo caja Info extra*/
 .infoExtra {
     margin-top: 25px;
@@ -13,16 +26,7 @@
 }
 
 .boxSubtitulo {
-    margin: 10px;
-    padding: 15px;
-    h2 {
-        font-size: 40px;
-        letter-spacing: 2px;
-        color: $color_1;
-        font-weight: bold;
-        margin: 15px;
-        padding: 10px;
-    }
+    @include subtitulos;
 }
 
 //Imagenes noticias 
@@ -71,22 +75,3 @@
 }
 
 
-
-// .comentario {
-//     border: 1px solid black;
-//     width: 400px;
-//     height: 500px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: end;
-//     flex-wrap: wrap;
-// }
-
-// .subComentario {
-//     font-size: 40px;
-//     letter-spacing: 2px;
-//     margin: 15px 5px 15px 5px;
-//     padding: 10px;
-//     color: $color_1;
-// }

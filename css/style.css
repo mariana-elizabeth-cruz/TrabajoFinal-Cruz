@@ -35,12 +35,12 @@ li {
   list-style: none;
 }
 
-Nav .btn-buscar {
+.btn-buscar {
   background-color: #005f75;
   color: white;
   transition: all 0.2s;
 }
-Nav .btn-buscar:hover {
+.btn-buscar:hover {
   background-color: #999999;
   color: black;
   border: 1px solid black;
@@ -210,6 +210,28 @@ footer .footerLink {
 }
 
 /* Estilo para seccion de categorias */
+.categoria {
+  margin: 20px;
+  padding: 10px;
+}
+
+.boxSubtitulo {
+  margin: 10px;
+  padding: 15px;
+}
+.boxSubtitulo h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: black;
+  font-weight: bold;
+  margin: 15px;
+  padding: 10px;
+}
+.boxSubtitulo p {
+  font-size: 35px;
+  font-weight: bold;
+}
+
 .serie1 {
   width: 340px;
   height: 420px;
