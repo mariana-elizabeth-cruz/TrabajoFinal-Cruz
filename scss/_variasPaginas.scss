@@ -1,8 +1,13 @@
-/* Estilo para seccion de categorias */
-.categoria {
+@mixin tamCajas {
     margin: 20px;
     padding: 10px;
 }
+
+/* Estilo para seccion de categorias */
+.tamCajas {
+    @include tamCajas;
+}
+
 .boxSubtitulo {
     @include subtitulos;
 
@@ -12,9 +17,8 @@
     }
 }
 
-
 /* Estilos para seccion de estrenos */
-.tituloE {
+.tituloDos {
     margin-top: 40px;
     padding-top: 35px;
 }
@@ -46,25 +50,30 @@
     }
 }
 
-/* Estilo para seccion Mi lista */
-.imgLista {
-    width: 650px;
-    height: 400px;
+.tamCajas {
+    @include tamCajas;
+    a{
+        text-decoration: none;
+        font-size: $parrafo;
+        color: $color_1;
+        transition: all 0.2s;
+
+        &:hover {
+            font-size: $parrafo + 10px;
+            font-weight: bold;
+        }
+    }
+}
+
+.boxEstreno {
+    @include colorFondo;
 }
 
 /* Estilo para seccion Login */
-.formulario {
-    margin: 30px;
-    padding: 20px;
+.boxLogin {
+    background: hsla(0, 0%, 100%, 0.55);
+    backdrop-filter: blur(30px);
 }
-
-.loginPadre {
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    border: 1px solid black;
-    border-radius: 20px;
-    width: 500px;
-    height: 450px;
-    margin: auto;
+form .textLogin {
+    margin-top: 10px;
 }

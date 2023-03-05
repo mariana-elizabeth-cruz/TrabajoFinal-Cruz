@@ -11,6 +11,9 @@
         padding: 10px;
     }
 }
+@mixin colorFondo {
+    background: linear-gradient(45deg, #669ac1, #ace3a1);
+}
 /*Estilo caja Info extra*/
 .infoExtra {
     margin-top: 25px;
@@ -52,8 +55,7 @@
 
 // Estilo cajas comentarios
 .boxComentario {
-    // background-color: #233849;
-    background: linear-gradient(45deg, #669ac1, #ace3a1);
+    @include colorFondo;
     transition: all 0.2s;
 
     h5 {
