@@ -6,10 +6,6 @@ body {
   background-color: #367578;
 }
 
-.parrafo {
-  font-size: 20px;
-}
-
 /*estilo para el menu*/
 .navColor {
   background-color: #00151A;
@@ -96,9 +92,8 @@ h1 {
   font-weight: bold;
 }
 
-.aboutTexto {
-  display: grid;
-  align-items: center;
+.parrafo {
+  font-size: 20px;
 }
 
 /*Estilo caja Info extra*/
@@ -336,12 +331,17 @@ form .textLogin {
   .banner .parrafo {
     display: none;
   }
-  .about {
-    display: grid;
-    grid-template-columns: 1fr;
+  .subTitulo {
+    font-size: 25px;
   }
-  .notiImg p {
-    margin: 30px;
+  /*Estilo Categoria*/
+  .boxCarrusel {
+    margin-top: 25px;
+    padding-top: 15px;
+  }
+  /*Estilo Estreno*/
+  .boxPortada {
+    height: 400px;
   }
   .portada {
     width: 290px;
@@ -352,48 +352,25 @@ form .textLogin {
     width: 200px;
     filter: contrast(120%);
   }
-  /* Imagenes de noticias */
-  .imgUno {
-    width: 250px;
+  .tituloDos h1 {
+    font-size: 40px;
   }
-  .imgDos {
-    width: 250px;
-  }
-  .imgTres {
-    width: 250px;
-  }
-  /* comentario */
-  .cajaPrincipal {
-    margin: 25px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .comentario {
-    width: 300px;
-    height: 400px;
+  /*Estilo Login*/
+  .boxLogin {
+    margin-right: 0;
   }
   /* Footer */
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
   .btnRedes {
-    font-size: 22px;
+    font-size: 20px;
     margin: 7px;
   }
-  .footerText h4 {
-    font-size: 15px;
+  .footerLink li {
+    margin-left: 0;
   }
-  /* LOGIN */
-  .loginPadre {
-    width: 270px;
-    height: 450px;
-    margin: auto;
+  .footerText h4 {
+    font-size: 18px;
+    margin: 10px;
+    padding: 5px;
   }
 }
 /* PARA TABLET */
@@ -407,7 +384,42 @@ form .textLogin {
     font-size: 20px;
     padding-left: 0;
   }
-  /* COMENTARIOS */
+  .subTitulo {
+    font-size: 25px;
+  }
+  .parrafo {
+    font-size: 12px;
+  }
+  /*estilo Info Extra*/
+  .boxSubtitulo {
+    margin: 0;
+    padding: 0;
+  }
+  .boxSubtitulo h2 {
+    font-size: 30px;
+  }
+  .infoExtra {
+    margin-top: 0;
+  }
+  /*Estilo Estreno*/
+  .tituloDos h1 {
+    font-size: 70px;
+  }
+  /*Estilo Login*/
+  .boxLogin {
+    margin-right: 0;
+  }
+  /* Footer */
+  .btnRedes {
+    font-size: 20px;
+    margin: 7px;
+  }
+  .footerLink li {
+    margin-left: 0;
+  }
+  .footerText h4 {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

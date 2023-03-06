@@ -16,19 +16,20 @@
         display: none;
     }
     //Seccion about
-    .about {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    // .subtitulo {
-
-    // }
-
-
-    .notiImg p {
-        margin: 30px;
+    .subTitulo {
+        font-size: $parrafo + 5px;
     }
 
+    /*Estilo Categoria*/
+    .boxCarrusel {
+        margin-top: 25px;
+        padding-top: 15px;
+    }
+
+/*Estilo Estreno*/
+    .boxPortada {
+        height: 400px;
+    }
     .portada {
         width: 290px;
         height: 350px;
@@ -39,59 +40,29 @@
         width: 200px;
         filter: contrast(120%);
     }
-
-    /* Imagenes de noticias */
-    .imgUno {
-        width: 250px;
+    .tituloDos h1 {
+        font-size: 40px;
     }
 
-    .imgDos {
-        width: 250px;
-    }
-
-    .imgTres {
-        width: 250px;
-    }
-
-    /* comentario */
-    .cajaPrincipal {
-        margin: 25px;
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .comentario {
-        width: 300px;
-        height: 400px;
+    /*Estilo Login*/
+    .boxLogin {
+        margin-right: 0;
     }
 
     /* Footer */
-    footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
     .btnRedes {
-        font-size: 22px;
+        font-size: 20px;
         margin: 7px;
     }
-
+    .footerLink li {
+        margin-left: 0;
+    }
     .footerText h4 {
-        font-size: 15px;
+        font-size: 18px;
+        margin: 10px;
+        padding: 5px
     }
 
-    /* LOGIN */
-    .loginPadre {
-        width: 270px;
-        height: 450px;
-        margin: auto;
-
-    }
 }
 
 /* PARA TABLET */
@@ -107,15 +78,49 @@
         font-size: $parrafo;
         padding-left: 0;
     }
-    /* COMENTARIOS */
-    // .cajaPrincipal {
-    //     display: grid;
-    //     grid-template-columns: 2fr 1fr;
-    //     justify-content: space-around;
-    // }
 
-    // .comentario {
-    //     width: 210px;
-    // }
+    //Acerca de
+    .subTitulo {
+        font-size: $parrafo + 5px;
+    }
+    .parrafo {
+        font-size: $parrafo - 8px;
+    }
+    
+    /*estilo Info Extra*/
+    .boxSubtitulo {
+        margin:  0;
+        padding: 0;
+    }
+    .boxSubtitulo h2 {
+        font-size: 30px;
+    }
+    .infoExtra {
+        margin-top: 0;
+    }
+
+    /*Estilo Estreno*/
+    .tituloDos h1 {
+        font-size: 70px;
+    }
+
+    /*Estilo Login*/
+    .boxLogin {
+        margin-right: 0;
+    }
+
+    /* Footer */
+    .btnRedes {
+        font-size: 20px;
+        margin: 7px;
+    }
+    
+    .footerLink li {
+        margin-left: 0;
+    }
+    
+    .footerText h4 {
+        font-size: 18px;
+    }
 
 }
