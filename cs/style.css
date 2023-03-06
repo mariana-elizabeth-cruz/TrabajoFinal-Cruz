@@ -210,7 +210,7 @@ footer .footerLink {
 }
 
 /* Estilo para seccion de categorias */
-.tamCajas {
+.categoria {
   margin: 20px;
   padding: 10px;
 }
@@ -233,7 +233,7 @@ footer .footerLink {
 }
 
 /* Estilos para seccion de estrenos */
-.tituloDos {
+.tituloE {
   margin-top: 40px;
   padding-top: 35px;
 }
@@ -264,62 +264,27 @@ footer .footerLink {
   filter: contrast(120%);
 }
 
-.tamCajas {
-  margin: 20px;
-  padding: 10px;
-}
-.tamCajas a {
-  text-decoration: none;
-  font-size: 20px;
-  color: black;
-  transition: all 0.2s;
-}
-.tamCajas a:hover {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.boxEstreno {
-  background: linear-gradient(45deg, #669ac1, #ace3a1);
+/* Estilo para seccion Mi lista */
+.imgLista {
+  width: 650px;
+  height: 400px;
 }
 
 /* Estilo para seccion Login */
-.boxLogin {
-  background: hsla(0, 0%, 100%, 0.55);
-  backdrop-filter: blur(30px);
-  margin-right: -50px;
+.formulario {
+  margin: 30px;
+  padding: 20px;
 }
 
-form .textLogin {
-  margin-top: 10px;
-}
-
-.btn-login {
-  background-color: #005f75;
-  color: white;
-  transition: all 0.2s;
-}
-.btn-login:hover {
-  background-color: #999999;
-  color: black;
+.loginPadre {
+  display: grid;
+  align-content: center;
+  justify-content: center;
   border: 1px solid black;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.textColor a {
-  text-decoration: none;
-  color: #17535e;
-  margin: 10px;
-  padding: 5px;
-}
-.textColor .icono {
-  font-size: 29px;
-  transition: all 0.2s;
-}
-.textColor .icono:hover {
-  font-size: 33px;
-  color: #113941;
+  border-radius: 20px;
+  width: 500px;
+  height: 450px;
+  margin: auto;
 }
 
 /* APLICANDO MEDIA QUERY */

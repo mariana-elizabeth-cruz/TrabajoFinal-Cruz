@@ -34,20 +34,10 @@
     }
 }
 
-.lista {
-    font-size: 15px;
-
-    &:hover {
-        background-color: $background-colorNav_2;
-        color: $colorNav_2;
-        font-weight: bold;
-        
-    }
-}
 
 li {
     list-style: none;
-}Nav
+}
 
 .btn-buscar {
     @include botones;

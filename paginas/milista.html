@@ -36,20 +36,8 @@
                         <li class="nav-item ">
                             <a class="nav-link active menuL" aria-current="page" href="../index.html">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle menuL" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categoria</a>
-                            <ul class="dropdown-menu dropdown-menu-dark " style="max-width: 230px;">
-                                
-                                <li>
-                                    <a class="dropdown-item lista" href="#">Acción y Ciencia ficción</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item lista" href="./comedia.html">Comedia</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item lista" href="#">Drama y Romance</a>
-                                </li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link menuL" href="./categoria.html">Categoria</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menuL" href="./estrenos.html">Estrenos</a>
@@ -74,49 +62,75 @@
     </header>
 
     <main>
-        <div class="titulo">
+        <div class="text-center tituloDos">
             <h1>Mi Lista</h1>
         </div>
         
-        <div class="cartelera">
-            <img class="imgLista" src="../imagenes/milista3.jpg" alt="Serie The last Of us">
-        </div>
-        <div class="cartelera">
-            <img class="imgLista" src="../imagenes/milista2.jpg" alt="Serie Friends">
-        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 tamCajas">
+            <div class="col">
+                <div class="card">
+                <img src="../imagenes/Merlina.jpg" class="card-img-top" alt="Serie Merlina">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="../imagenes/Halo.jpg" class="card-img-top" alt="Serie Halo">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="../imagenes/Tulsa_King.jpg" class="card-img-top" alt="Serie Tulsa King">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                </div>
+            </div>
+
+            </div>
+        
     </main>
 
-    <footer>
-        <div>
-            <ul class="footerLink">
-                <li>
-                    <a href="https://www.facebook.com/" class="btnRedes" target="_blank">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" class="btnRedes" target="_blank">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com" class="btnRedes" target="_blank">
-                        <i class="bi bi-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com" class="btnRedes" target="_blank">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                </li>
-            </ul>
+    <footer >
+        <div class="row">
+            <div class="col align-self-center">
+                <ul class="footerLink">
+                    <li>
+                        <a href="https://www.facebook.com/" class="btnRedes" target="_blank">
+                            <i class="bi bi-facebook"> Facebook</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" class="btnRedes" target="_blank">
+                            <i class="bi bi-instagram"> Instagram</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com" class="btnRedes" target="_blank">
+                            <i class="bi bi-twitter"> Twitter</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com" class="btnRedes" target="_blank">
+                            <i class="bi bi-youtube"> YouTube</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col align-self-center footerText">
+                <h4>Veamos una serie | © Todos los derechos reservados 2023</h4>
+                <h4>Santiago del Estero, Argentina</h4>
+            </div>
         </div>
-        
-        <div class="footerText">
-            <h4>Veamos una serie | © Todos los derechos reservados 2023</h4>
-            <h4>Santiago del Estero, Argentina</h4>
-        </div>
-
     </footer>
 
     <!-- link js de bootstrap -->

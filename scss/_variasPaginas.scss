@@ -1,53 +1,101 @@
-/* Estilo para seccion de categorias */
-.serie1 {
-    width: 340px;
-    height: 420px;
-}
-
-.serie3 {
-    width: 320px;
-    height: 430px;
-}
-
-.serie4 {
-    width: 300px;
-    height: 430px;
-}
-
-.boxCategoria {
-    margin: 15px;
-    padding: 10px;
-}
-
-/* Estilos para seccion de estrenos */
-.divPadre {
+@mixin tamCajas {
     margin: 20px;
     padding: 10px;
 }
 
-.divHijo {
-    text-align: center;
+/* Estilo para seccion de categorias */
+.tamCajas {
+    @include tamCajas;
 }
 
-/* Estilo para seccion Mi lista */
-.imgLista {
-    width: 650px;
-    height: 400px;
+.boxSubtitulo {
+    @include subtitulos;
+
+    p {
+        font-size: $parrafo + 15px;
+        font-weight: bold;
+    }
+}
+
+/* Estilos para seccion de estrenos */
+.tituloDos {
+    margin-top: 40px;
+    padding-top: 35px;
+}
+.boxPortada {
+    display: grid;
+    place-items: center;
+    height: 700px;
+}
+
+.portada {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 630px;
+
+    img {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 0.8;
+        transition: .5s ease;
+
+        &:hover {
+            cursor: pointer;
+            width: 350px;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+    }
+}
+
+.tamCajas {
+    @include tamCajas;
+    a{
+        text-decoration: none;
+        font-size: $parrafo;
+        color: $color_1;
+        transition: all 0.2s;
+
+        &:hover {
+            font-size: $parrafo + 10px;
+            font-weight: bold;
+        }
+    }
+}
+
+.boxEstreno {
+    @include colorFondo;
 }
 
 /* Estilo para seccion Login */
-.formulario {
-    margin: 30px;
-    padding: 20px;
+.boxLogin {
+    background: hsla(0, 0%, 100%, 0.55);
+    backdrop-filter: blur(30px);
+    margin-right: -50px;
+}
+form .textLogin {
+    margin-top: 10px;
+}
+.btn-login {
+    @include botones;
+}
+.textColor {
+    a {
+        text-decoration: none;
+        color: $background-colorNav_2;
+        margin: 10px;
+        padding: 5px;
+    }
+    .icono {
+        font-size: $parrafo + 9px;
+        transition: all 0.2s;
+
+        &:hover {
+            font-size: $parrafo + 13px;
+            color: #113941;
+        }
+    }
 }
 
-.loginPadre {
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    border: 1px solid black;
-    border-radius: 20px;
-    width: 500px;
-    height: 450px;
-    margin: auto;
-}
