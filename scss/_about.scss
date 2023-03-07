@@ -1,3 +1,8 @@
+@mixin sombraCaja {
+    box-shadow: 10px 10px 30px #000000;
+    box-shadow: ejeX ejeY difumasion color;
+    background-color: #678282;
+}
 /* Acerca de nosotros*/
 .about {
     margin: 15px;
@@ -5,9 +10,7 @@
 
 }
 .aboutSombra {
-    box-shadow: 10px 10px 30px #000000;
-    box-shadow: ejeX ejeY difumasion color;
-    background-color: #678282;
+    @include sombraCaja;
 }
 
 .subTitulo {
@@ -16,10 +19,7 @@
     color: $color_1;
     font-weight: bold;
 }
-// .aboutTexto {
-//     display: grid;
-//     align-items: center;
-// }
+
 .parrafo {
     font-size: $parrafo;
 }

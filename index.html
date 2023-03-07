@@ -74,7 +74,7 @@
         <!-- seccion sobre la página -->
         <section class="about">
             <div class="card mb-0 aboutSombra" style="max-width: 100%;">
-                <div class="row g-0 text-center boxAbout">
+                <div class="row g-0 text-center">
                     <div class="col-sm-6 col-md-4 col-lg-4">
                         <img src="imagenes/aboutDos.jpg" class="img-fluid rounded-start" alt="Personas sentadas en el sofa mirando el televisor">
                     </div>
@@ -101,26 +101,30 @@
                     <div class="boxSubtitulo">
                         <h2>Últimas noticias</h2>
                     </div>
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-1 row-cols-lg-3 g-4">
-                    <!-- <div class="container"> -->
-                        <div class="boxImg">
-                        <!-- <div class="col boxImg"> -->
-                            <a href="#">
-                                <img class="imagen" src="imagenes/noti1.jpg" alt="Noticia sobre Euphoria">
-                            </a>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse adipisci necessitatibus totam autem veritatis blanditiis nobis ullam quas enim? Soluta saepe consequuntur atque, magni repudiandae delectus harum voluptatibus et officiis.</p>
+                    <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card boxImg" style="max-width: 500px;">
+                                <a href="https://www.eluniversal.com.mx/espectaculos/conoce-la-millonaria-suma-de-dinero-que-ganara-zendaya-por-su-regreso-euphoria" target="_blank">
+                                    <img class="imagen" src="imagenes/noti1.jpg" alt="Noticia sobre Euphoria">
+                                </a>
+                                <p>Conoce la millonaria suma de dinero que ganará Zendaya por su regreso a “Euphoria”. La actriz de 26 años negocia un acuerdo que podría hacerla entrar en un grupo selecto de actores: el de los mejores pagados por capítulo de serie.</p>
+                            </div>
                         </div>
-                        <div class="boxImg">
-                            <a href="#">
-                                <img class="imagen" src="imagenes/noti2.jpg" alt="Noticia sobre Loki">
-                            </a>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse adipisci necessitatibus totam autem veritatis blanditiis nobis ullam quas enim? Soluta saepe consequuntur atque, magni repudiandae delectus harum voluptatibus et officiis.</p>
+                        <div class="col">
+                            <div class="card boxImg">
+                                <a href="https://www.espaciomarvelita.com/2023/03/07/series/nuevos-detalles-temporada-2-loki/" target="_blank">
+                                    <img class="imagen" src="imagenes/noti2.jpg" alt="Noticia sobre Loki">
+                                </a>
+                                <p>Nuevos detalles de lo que podemos esperar de la temporada 2 de Loki. Hablando para el podcast D23: Inside Disney, el Vicepresidente de Desarrollo y Producción de Marvel Studios, Stephen Broussard, habló sobre las expectativas que rodean a la esperada temporada 2 de Loki.</p>
+                            </div>
                         </div>
-                        <div class="boxImg">
-                            <a href="#">
-                                <img class="imagen" src="imagenes/noti3.png" alt="Noticia sobre Stranger Things">
-                            </a>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse adipisci necessitatibus totam autem veritatis blanditiis nobis ullam quas enim? Soluta saepe consequuntur atque, magni repudiandae delectus harum voluptatibus et officiis.</p>
+                        <div class="col">
+                            <div class="card boxImg">
+                                <a href="https://www.cronista.com/clase/series-y-peliculas/stranger-things-5-un-actor-revelo-la-mejor-noticia-para-los-fanaticos-de-la-serie-cuando-se-estrena/" target="_blank">
+                                    <img class="imagen" src="imagenes/noti3.png" alt="Noticia sobre Stranger Things">
+                                </a>
+                                <p>Stranger Things 5: un actor reveló la mejor noticia para los fanáticos de la serie, ¿cuándo se estrena? David Harbour, quien interpreta a Jim Hopper en la ficción, reveló un detalle clave sobre Stranger Things. ¿Cuándo se estrena la temporada 5?</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -158,7 +162,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <button type="button" class="btn btn_modal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Hacer un comentario</button>
+                            <button type="button" class="btn btn_modal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Hacer comentario</button>
 
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
