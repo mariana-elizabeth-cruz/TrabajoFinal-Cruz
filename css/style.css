@@ -77,7 +77,7 @@ h1 {
 /* Acerca de nosotros*/
 .about {
   margin: 15px;
-  padding: 25px;
+  padding: 5px;
 }
 
 .aboutSombra {
@@ -95,6 +95,7 @@ h1 {
 
 .parrafo {
   font-size: 20px;
+  margin-top: 15px;
 }
 
 /*Estilo caja Info extra*/
