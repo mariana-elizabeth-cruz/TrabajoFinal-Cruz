@@ -11,12 +11,12 @@
 
 .titulo {
     text-transform: uppercase;
-    padding-top: 300px;
+    padding-top: 200px;
     @include colorText;    
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 4rem;
     font-weight: bold;
     line-height: 2;
     letter-spacing: 3px;

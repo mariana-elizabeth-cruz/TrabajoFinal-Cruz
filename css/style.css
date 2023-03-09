@@ -48,13 +48,13 @@ li {
 /* Estilo para titulo y portada */
 .titulo {
   text-transform: uppercase;
-  padding-top: 300px;
+  padding-top: 200px;
   color: rgb(243, 237, 237);
   padding-left: 35rem;
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 4rem;
   font-weight: bold;
   line-height: 2;
   letter-spacing: 3px;
