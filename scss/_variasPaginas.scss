@@ -1,8 +1,3 @@
-@mixin tamCajas {
-    margin: 20px;
-    padding: 10px;
-}
-
 /* Estilo para seccion de categorias */
 .tamCajas {
     @include tamCajas;

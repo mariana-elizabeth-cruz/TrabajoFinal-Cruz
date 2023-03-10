@@ -24,7 +24,6 @@
             <a href="index.html">
                 <img src="imagenes/logoApp.png" class="rounded-5 logo" alt="Logo Cine">
             </a>
-            
             <!-- ----------------- -->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -34,7 +33,7 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <!-- Lista de Menu -->
-                <nav class="offcanvas-body">
+                <nav class="offcanvas-body tamMenu">
                     <ul class="navbar-nav d-flex justify-content-evenly flex-grow-1 pe-3">
                         <li class="nav-item">
                             <a class="nav-link active menuL" aria-current="page" href="index.html">Home</a>
@@ -105,11 +104,14 @@
                     </div>
                     <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 g-4">
                         <div class="col">
-                            <div class="card boxImg" style="max-width: 500px;">
+                            <div class="card boxImg">
                                 <a href="https://www.eluniversal.com.mx/espectaculos/conoce-la-millonaria-suma-de-dinero-que-ganara-zendaya-por-su-regreso-euphoria" target="_blank">
                                     <img class="imagen" src="imagenes/noti1.jpg" alt="Noticia sobre Euphoria">
                                 </a>
-                                <p>Conoce la millonaria suma de dinero que ganará Zendaya por su regreso a “Euphoria”. La actriz de 26 años negocia un acuerdo que podría hacerla entrar en un grupo selecto de actores: el de los mejores pagados por capítulo de serie.</p>
+                                <div class="card-body">
+                                    <p>Conoce la millonaria suma de dinero que ganará Zendaya por su regreso a “Euphoria”. La actriz de 26 años negocia un acuerdo que podría hacerla entrar en un grupo selecto de actores: el de los mejores pagados por capítulo de serie.</p>
+                                </div>
+                                
                             </div>
                         </div>
                         <div class="col">
@@ -117,7 +119,9 @@
                                 <a href="https://www.espaciomarvelita.com/2023/03/07/series/nuevos-detalles-temporada-2-loki/" target="_blank">
                                     <img class="imagen" src="imagenes/noti2.jpg" alt="Noticia sobre Loki">
                                 </a>
-                                <p>Nuevos detalles de lo que podemos esperar de la temporada 2 de Loki. Hablando para el podcast D23: Inside Disney, el Vicepresidente de Desarrollo y Producción de Marvel Studios, Stephen Broussard, habló sobre las expectativas que rodean a la esperada temporada 2 de Loki.</p>
+                                <div class="card-body">
+                                    <p>Nuevos detalles de lo que podemos esperar de la temporada 2 de Loki. Hablando para el podcast D23: Inside Disney, el Vicepresidente de Desarrollo y Producción de Marvel Studios, Stephen Broussard, habló sobre las expectativas que rodean a la esperada temporada 2 de Loki.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col">
@@ -125,11 +129,14 @@
                                 <a href="https://www.cronista.com/clase/series-y-peliculas/stranger-things-5-un-actor-revelo-la-mejor-noticia-para-los-fanaticos-de-la-serie-cuando-se-estrena/" target="_blank">
                                     <img class="imagen" src="imagenes/noti3.png" alt="Noticia sobre Stranger Things">
                                 </a>
-                                <p>Stranger Things 5: un actor reveló la mejor noticia para los fanáticos de la serie, ¿cuándo se estrena? David Harbour, quien interpreta a Jim Hopper en la ficción, reveló un detalle clave sobre Stranger Things. ¿Cuándo se estrena la temporada 5?</p>
+                                <div class="card-body">
+                                    <p>Stranger Things 5: un actor reveló la mejor noticia para los fanáticos de la serie, ¿cuándo se estrena? David Harbour, quien interpreta a Jim Hopper en la ficción, reveló un detalle clave sobre Stranger Things. ¿Cuándo se estrena la temporada 5?</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
                 <!-- seccion comentarios -->
                 <div class="col-sm-6 col-md-5 offset-md-1 col-lg-4 offset-lg-0">
                     <div class="row row-cols-1 row-cols-md-1 offset-md-1 g-3">
@@ -140,7 +147,7 @@
                             <div class="card boxComentario">
                                 <div class="card-body">
                                     <h5 class="card-title">Cinephile91</h5>
-                                    <p class="card-text">"La mejor serie de la temporada": Barbarians¡Increíble! No puedo creer lo adictiva que es esta serie. He pasado todo el fin de semana pegado a la pantalla. Definitivamente recomiendo darle una oportunidad.</p>
+                                    <p class="card-text">"La mejor serie de la temporada": Barbarians ¡Increíble! No puedo creer lo adictiva que es esta serie. He pasado todo el fin de semana pegado a la pantalla. Definitivamente recomiendo darle una oportunidad.</p>
                                     <p class="card-text"><small class="text-muted">10 de mayo de 2022, 20:30</small></p>
                                 </div>
                             </div>
@@ -149,7 +156,7 @@
                             <div class="card boxComentario">
                                 <div class="card-body">
                                     <h5 class="card-title">TVjunkie77</h5>
-                                    <p class="card-text">"¿Qué pasó con el final de la temporada 2 de Stranger Things?": La verdad es que me decepcionó un poco el final de temporada. Esperaba algo más impactante. Pero igual la serie en general es muy buena y espero con ansias la siguiente temporada.</p>
+                                    <p class="card-text">"¿Qué pasó con el final de la temporada 4 de Stranger Things?": La verdad es que me decepcionó un poco el final de temporada. Esperaba algo más impactante. Pero igual la serie en general es muy buena y espero con ansias la siguiente temporada.</p>
                                     <p class="card-text"><small class="text-muted">3 de agosto de 2022, 12:45</small></p>
                                 </div>
                             </div>
@@ -165,32 +172,31 @@
                         </div>
                         <div class="col">
                             <button type="button" class="btn btn_modal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Hacer comentario</button>
-
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                <div class="modal-header">
-                                    <h2 class="modal-title fs-5" id="exampleModalLabel">New message</h2>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
+                                <div class="modal-dialog">
+                                    <div class="modal-content modalFondo">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title fs-5" id="exampleModalLabel">Nuevo mensaje</h2>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="recipient-name" class="col-form-label">Nombre:</label>
+                                                    <input type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Mensaje:</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn_close" data-bs-dismiss="modal">Cerrar</button>
+                                            <button type="button" class="btn btn_modal">Enviar</button>
+                                        </div>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="message-text" class="col-form-label">Message:</label>
-                                        <textarea class="form-control" id="message-text"></textarea>
-                                    </div>
-                                    </form>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Send message</button>
-                                </div>
-                                </div>
-                            </div>
                             </div>
                         </div>
                     </div>
@@ -200,42 +206,48 @@
 
     </main>
 
-    <footer >
-        <div class="row">
-            <div class="col align-self-center">
-                <ul class="footerLink">
-                    <li>
-                        <a href="https://www.facebook.com/" class="btnRedes" target="_blank">
-                            <i class="bi bi-facebook"> Facebook</i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/" class="btnRedes" target="_blank">
-                            <i class="bi bi-instagram"> Instagram</i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com" class="btnRedes" target="_blank">
-                            <i class="bi bi-twitter"> Twitter</i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com" class="btnRedes" target="_blank">
-                            <i class="bi bi-youtube"> YouTube</i>
-                        </a>
-                    </li>
-                </ul>
-                
-            </div>
-            <div class="col align-self-center p-0 footerText">
-                <h4>Veamos una serie | © Todos los derechos reservados 2023</h4>
-                <h4>Santiago del Estero, Argentina</h4>                
+    <!-- Footer -->
+    <footer> 
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-3">
+                <div class="col">
+                    <ul class="footerLink">
+                        <li>
+                            <a href="https://www.facebook.com/" class="btnRedes" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" class="btnRedes" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com" class="btnRedes" target="_blank">
+                                <i class="bi bi-twitter"></i>
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com" class="btnRedes" target="_blank">
+                                <i class="bi bi-youtube"></i>
+                                YouTube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col footerText">
+                    <h4>Veamos una serie | © Todos los derechos reservados 2023</h4>
+                    <h4>Santiago del Estero, Argentina</h4>
+                </div>
             </div>
         </div>
-
     </footer>
 
     <!-- link js de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 </body>
 </html>

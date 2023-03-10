@@ -1,17 +1,3 @@
-@mixin botones {
-    background-color: $background-colorNav_3;
-    color: $colorNav_3;
-    transition: all 0.2s;
-    
-    &:hover {
-        background-color: $background-colorNav_4;
-        color: $colorNav_2;
-        border: 1px solid black;
-        font-weight: bold;
-        font-size: 18px;
-    }
-}
-
 /*estilo para el menu*/
 .navColor {
     background-color: $background-colorNav_1;
@@ -33,7 +19,6 @@
         font-size: 22px;
     }
 }
-
 
 li {
     list-style: none;

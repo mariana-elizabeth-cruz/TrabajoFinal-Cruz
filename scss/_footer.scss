@@ -1,7 +1,5 @@
 /* PIE DE PÁGINA */
-@mixin textoFooter {
-    color: $colorFooter_1;
-}
+
 footer {
     background-color: $background-colorF_1;
     width: 100%;
@@ -24,7 +22,7 @@ footer {
     }
 
     li {
-        margin-left: 250px;
+        margin-left: 150px;
     }
 }
 
@@ -37,5 +35,6 @@ footer {
 
 .footerText {
     @include textoFooter;
-    // text-align: center;
+    text-align: center;
+    margin-top: 70px;
 }

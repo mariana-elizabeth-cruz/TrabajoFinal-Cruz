@@ -1,0 +1,57 @@
+@mixin botones {
+    background-color: $background-colorNav_3;
+    color: $colorNav_3;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: $background-colorNav_4;
+        color: $colorNav_2;
+        border: 1px solid black;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+
+@mixin sombraCaja {
+    box-shadow: 10px 10px 30px #000000;
+    background-color: #678282;
+}
+
+// Inicio
+@mixin colorText {
+    color: $colorPortada_1;
+    padding-left: 31rem;
+}
+
+@mixin textoPortadas {
+    font-size: $parrafo+10px;
+    text-shadow: 1px 1px 2px black;
+}
+
+@mixin subtitulos {
+    margin: 10px;
+    padding: 15px;
+
+    h2 {
+        font-size: 40px;
+        letter-spacing: 2px;
+        color: $color_1;
+        font-weight: bold;
+        margin: 15px;
+        padding: 10px;
+    }
+}
+
+@mixin colorFondo {
+    background: linear-gradient(45deg, #044f69, #89b4ad);
+}
+
+@mixin textoFooter {
+    color: $colorFooter_1;
+}
+
+@mixin tamCajas {
+    margin: 20px;
+    padding: 10px;
+}
+
