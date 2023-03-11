@@ -21,7 +21,9 @@
     <header class="navbar navbar-expand-lg navbar-dark navColor fixed-top">
         <div class="container-fluid">
             <!--  Logo de la página -->
-            <img src="../imagenes/logoApp.png" class="rounded-5 logo" alt="Logo Cine">
+            <a href="../index.html">
+                <img src="../imagenes/logoApp.png" class="rounded-5 logo" alt="Logo Cine">
+            </a>
             <!-- ----------------- -->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -31,7 +33,7 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <!-- Lista de Menu -->
-                <nav class="offcanvas-body">
+                <nav class="offcanvas-body tamMenu">
                     <ul class="navbar-nav d-flex justify-content-evenly flex-grow-1 pe-3">
                         <li class="nav-item ">
                             <a class="nav-link active menuL" aria-current="page" href="../index.html">Home</a>
@@ -69,7 +71,7 @@
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner tamCategoria">
                 <div class="carousel-item active">
                     <img src="../imagenes/catDos.jpg" class="d-block w-100" alt="Imagen de serie Halo">
                     <div class="carousel-caption d-none d-md-block">
@@ -249,35 +251,42 @@
 
     </main>
     
-    <footer >
-        <div class="row">
-            <div class="col align-self-center">
-                <ul class="footerLink">
-                    <li>
-                        <a href="https://www.facebook.com/" class="btnRedes" target="_blank">
-                            <i class="bi bi-facebook"> Facebook</i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/" class="btnRedes" target="_blank">
-                            <i class="bi bi-instagram"> Instagram</i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com" class="btnRedes" target="_blank">
-                            <i class="bi bi-twitter"> Twitter</i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com" class="btnRedes" target="_blank">
-                            <i class="bi bi-youtube"> YouTube</i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col align-self-center footerText">
-                <h4>Veamos una serie | © Todos los derechos reservados 2023</h4>
-                <h4>Santiago del Estero, Argentina</h4>
+    <!-- Footer -->
+    <footer> 
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-3">
+                <div class="col">
+                    <ul class="footerLink">
+                        <li>
+                            <a href="https://www.facebook.com/" class="btnRedes" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" class="btnRedes" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com" class="btnRedes" target="_blank">
+                                <i class="bi bi-twitter"></i>
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com" class="btnRedes" target="_blank">
+                                <i class="bi bi-youtube"></i>
+                                YouTube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col footerText">
+                    <h4>Veamos una serie | © Todos los derechos reservados 2023</h4>
+                    <h4>Santiago del Estero, Argentina</h4>
+                </div>
             </div>
         </div>
     </footer>
