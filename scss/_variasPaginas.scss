@@ -12,6 +12,15 @@
     }
 }
 
+.boxCategoria {
+    color: $color_1;
+    background: linear-gradient(45deg, #638879, #26acbd);
+    border: 1px solid $color_1;
+    p {
+        font-size: $parrafo -10px;
+    }
+}
+
 /* Estilos para seccion de estrenos */
 .tituloDos {
     margin-top: 40px;
@@ -49,12 +58,12 @@
     @include tamCajas;
     a{
         text-decoration: none;
-        font-size: $parrafo;
+        font-size: $parrafo - 2px;
         color: $color_1;
         transition: all 0.2s;
 
         &:hover {
-            font-size: $parrafo + 10px;
+            font-size: $parrafo;
             font-weight: bold;
         }
     }
@@ -62,6 +71,8 @@
 
 .boxEstreno {
     @include colorFondo;
+    border: 1px solid $color_1;
+    border-radius: 15px;
 }
 
 /* Estilo para seccion Login */

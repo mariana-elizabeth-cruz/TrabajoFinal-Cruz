@@ -250,6 +250,15 @@ footer .footerLink {
   font-weight: bold;
 }
 
+.boxCategoria {
+  color: black;
+  background: linear-gradient(45deg, #638879, #26acbd);
+  border: 1px solid black;
+}
+.boxCategoria p {
+  font-size: 20px -10px;
+}
+
 /* Estilos para seccion de estrenos */
 .tituloDos {
   margin-top: 40px;
@@ -288,17 +297,19 @@ footer .footerLink {
 }
 .tamCajas a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   transition: all 0.2s;
 }
 .tamCajas a:hover {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .boxEstreno {
   background: linear-gradient(45deg, #044f69, #89b4ad);
+  border: 1px solid black;
+  border-radius: 15px;
 }
 
 /* Estilo para seccion Login */
