@@ -25,6 +25,15 @@
 .tituloDos {
     margin-top: 40px;
     padding-top: 35px;
+
+    h1 {
+        font-size: 90px;
+        letter-spacing: 6px;
+        color: $color_1;
+        text-shadow: 2px 2px 25px #323f4d,
+        2px 2px 5px #6692a4;
+    }
+
 }
 .boxPortada {
     display: grid;

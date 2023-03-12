@@ -58,7 +58,7 @@ h1 {
   font-weight: bold;
   line-height: 2;
   letter-spacing: 3px;
-  text-shadow: 1px 1px 2px black, 2px 2px 25px #2e4e80, 2px 2px 5px #000095;
+  text-shadow: 1px 1px 2px black, 2px 2px 25px #323f4d, 2px 2px 5px #489de6;
 }
 
 .banner .parrafo {
@@ -263,6 +263,12 @@ footer .footerLink {
 .tituloDos {
   margin-top: 40px;
   padding-top: 35px;
+}
+.tituloDos h1 {
+  font-size: 90px;
+  letter-spacing: 6px;
+  color: black;
+  text-shadow: 2px 2px 25px #323f4d, 2px 2px 5px #6692a4;
 }
 
 .boxPortada {
