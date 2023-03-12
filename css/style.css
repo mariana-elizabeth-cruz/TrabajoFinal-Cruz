@@ -319,10 +319,32 @@ footer .footerLink {
 }
 
 /* Estilo para seccion Login */
+.tituloSesion {
+  margin-top: 70px;
+  padding-top: 40px;
+}
+.tituloSesion h1 {
+  font-size: 55px;
+  letter-spacing: 6px;
+  color: black;
+}
+
+.boxSesion {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  padding-bottom: 50px;
+}
+
 .boxLogin {
   background: hsla(0, 0%, 100%, 0.55);
   backdrop-filter: blur(30px);
   margin-right: -50px;
+  height: 750px;
+}
+.boxLogin h2 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
 }
 
 form .textLogin {
@@ -333,6 +355,7 @@ form .textLogin {
   background-color: #005f75;
   color: white;
   transition: all 0.2s;
+  margin-top: 5px;
 }
 .btn-login:hover {
   background-color: #999999;
@@ -394,21 +417,22 @@ form .textLogin {
   }
   /*Estilo Estreno*/
   .boxPortada {
-    height: 400px;
+    display: none;
   }
-  .portada {
-    width: 290px;
-    height: 350px;
-  }
-  .portada img:hover {
-    cursor: pointer;
-    width: 200px;
-    filter: contrast(120%);
+  .boxEstreno p {
+    display: none;
   }
   .tituloDos h1 {
     font-size: 40px;
   }
   /*Estilo Login*/
+  .tituloSesion h1 {
+    font-size: 35px;
+  }
+  .boxSesion {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
   .boxLogin {
     margin-right: 0;
   }
@@ -428,7 +452,7 @@ form .textLogin {
   }
 }
 /* PARA TABLET */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .titulo {
     font-size: 3rem;
     padding-top: 10rem;
@@ -467,6 +491,9 @@ form .textLogin {
   .tituloDos h1 {
     font-size: 70px;
   }
+  .boxPortada {
+    display: none;
+  }
   /*Estilo Login*/
   .boxLogin {
     margin-right: 0;
@@ -481,6 +508,15 @@ form .textLogin {
   }
   .footerText h4 {
     font-size: 18px;
+  }
+}
+/*Vista Escritorio*/
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 50px;
+  }
+  .carruselEstreno {
+    display: none;
   }
 }
 

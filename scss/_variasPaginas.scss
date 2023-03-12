@@ -85,16 +85,39 @@
 }
 
 /* Estilo para seccion Login */
+.tituloSesion {
+    margin-top: 70px;
+    padding-top: 40px;
+    
+    h1 {
+        font-size: 55px;
+        letter-spacing: 6px;
+        color: $color_1;
+    }
+}
+.boxSesion {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding-bottom: 50px;
+}
 .boxLogin {
     background: hsla(0, 0%, 100%, 0.55);
     backdrop-filter: blur(30px);
     margin-right: -50px;
+    height: 750px;
+
+    h2 {
+        font-size: 40px;
+        letter-spacing: 3px;
+        margin-bottom: 25px;
+    }
 }
 form .textLogin {
     margin-top: 10px;
 }
 .btn-login {
     @include botones;
+    margin-top: 5px;
 }
 .textColor {
     a {

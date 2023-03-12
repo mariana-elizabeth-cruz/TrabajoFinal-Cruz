@@ -43,23 +43,25 @@
 
 /*Estilo Estreno*/
     .boxPortada {
-        height: 400px;
-    }
-    .portada {
-        width: 290px;
-        height: 350px;
+        display: none;
     }
 
-    .portada img:hover {
-        cursor: pointer;
-        width: 200px;
-        filter: contrast(120%);
+    .boxEstreno p {
+        display: none;
     }
+
     .tituloDos h1 {
         font-size: 40px;
     }
 
     /*Estilo Login*/
+    .tituloSesion h1 {
+        font-size: 35px;
+    }
+    .boxSesion {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
     .boxLogin {
         margin-right: 0;
     }
@@ -84,7 +86,7 @@
 }
 
 /* PARA TABLET */
-@media (min-width:768px) and (max-width:1024px) {
+@media (min-width:768px) and (max-width:1023px) {
 
     // portada
     .titulo {
@@ -131,6 +133,10 @@
         font-size: 70px;
     }
 
+    .boxPortada {
+        display: none;
+    }
+
     /*Estilo Login*/
     .boxLogin {
         margin-right: 0;
@@ -150,4 +156,18 @@
         font-size: 18px;
     }
 
+}
+
+/*Vista Escritorio*/
+
+@media (min-width: 1024px) { 
+    // Portada
+    h1 {
+        font-size: 50px;
+    }
+
+    // estreno
+    .carruselEstreno {
+        display: none;
+    }
 }
