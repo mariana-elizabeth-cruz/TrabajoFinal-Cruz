@@ -9,17 +9,10 @@ footer {
         padding: 10px;
     }
 }
-
 .footerLink {
     a {
         text-decoration: none;
-        transition: all 0.3s;
-
-        &:hover {
-            font-weight: bold;
-            color: $colorNav_1;
         }
-    }
 
     li {
         margin-left: 150px;
@@ -29,8 +22,8 @@ footer {
 .btnRedes {
     font-size: 25px;
     @include textoFooter;
-    margin: 15px;
-    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .footerText {

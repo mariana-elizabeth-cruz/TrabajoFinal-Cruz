@@ -21,23 +21,18 @@ body {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
-  transition: all 0.2s;
-}
-.menuL:hover {
-  color: #008099;
-  font-size: 22px;
 }
 
 li {
   list-style: none;
 }
 
-.btn-buscar {
+.btnBuscar {
   background-color: #005f75;
   color: white;
   transition: all 0.2s;
 }
-.btn-buscar:hover {
+.btnBuscar:hover {
   background-color: #999999;
   color: black;
   border: 1px solid black;
@@ -123,29 +118,31 @@ h1 {
   padding: 10px;
 }
 
-.boxImg {
+.boxNoticias {
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   border-radius: 15px;
   background-color: #759797;
-  height: 500px;
 }
-.boxImg img {
+.boxNoticias img {
   width: 250px;
   height: 220px;
   margin: 10px 15px 10px 15px;
   border-radius: 15px;
-  transition: all 0.2s;
 }
-.boxImg img:hover {
-  width: 270px;
-  height: 240px;
-  box-shadow: 5px 5px 7px #495f5f;
+.boxNoticias a {
+  text-decoration: none;
+  color: black;
 }
-.boxImg p {
+.boxNoticias p {
   margin-top: 15px;
   padding-top: 5px;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.imagen {
+  display: flex;
+  justify-content: center;
 }
 
 .boxComentario {
@@ -161,12 +158,13 @@ h1 {
   font-weight: bold;
 }
 
-.btn_modal {
+.btnModal {
   background-color: #005f75;
   color: white;
   transition: all 0.2s;
+  margin: 30px;
 }
-.btn_modal:hover {
+.btnModal:hover {
   background-color: #999999;
   color: black;
   border: 1px solid black;
@@ -174,12 +172,12 @@ h1 {
   font-size: 18px;
 }
 
-.btn_close {
+.btnClose {
   background-color: rgb(187, 26, 26);
   color: white;
   transition: all 0.2s;
 }
-.btn_close:hover {
+.btnClose:hover {
   background-color: #999999;
   color: black;
   border: 1px solid black;
@@ -204,11 +202,6 @@ footer .footerLink {
 
 .footerLink a {
   text-decoration: none;
-  transition: all 0.3s;
-}
-.footerLink a:hover {
-  font-weight: bold;
-  color: #008099;
 }
 .footerLink li {
   margin-left: 150px;
@@ -217,8 +210,8 @@ footer .footerLink {
 .btnRedes {
   font-size: 25px;
   color: #a8a8a8;
-  margin: 15px;
-  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .footerText {
@@ -252,7 +245,7 @@ footer .footerLink {
 
 .boxCategoria {
   color: black;
-  background: linear-gradient(45deg, #638879, #26acbd);
+  background: radial-gradient(#9fcdd8, #396f77);
   border: 1px solid black;
 }
 .boxCategoria p {
@@ -317,6 +310,9 @@ footer .footerLink {
   border: 1px solid black;
   border-radius: 15px;
 }
+.boxEstreno h2 {
+  font-weight: bold;
+}
 
 /* Estilo para seccion Login */
 .tituloSesion {
@@ -351,13 +347,13 @@ form .textLogin {
   margin-top: 10px;
 }
 
-.btn-login {
+.btnLogin {
   background-color: #005f75;
   color: white;
   transition: all 0.2s;
   margin-top: 5px;
 }
-.btn-login:hover {
+.btnLogin:hover {
   background-color: #999999;
   color: black;
   border: 1px solid black;
@@ -365,19 +361,14 @@ form .textLogin {
   font-size: 18px;
 }
 
-.textColor a {
+.iconosLogin a {
   text-decoration: none;
   color: #17535e;
   margin: 10px;
   padding: 5px;
 }
-.textColor .icono {
+.iconosLogin .icono {
   font-size: 29px;
-  transition: all 0.2s;
-}
-.textColor .icono:hover {
-  font-size: 33px;
-  color: #113941;
 }
 
 /* APLICANDO MEDIA QUERY */
@@ -462,9 +453,6 @@ form .textLogin {
     font-size: 20px;
     padding-left: 0;
   }
-  .boxImg {
-    height: 550px;
-  }
   .subTitulo {
     font-size: 25px;
   }
@@ -481,6 +469,10 @@ form .textLogin {
   }
   .infoExtra {
     margin-top: 0;
+  }
+  .boxNoticias img {
+    width: 200px;
+    height: 170px;
   }
   /*Estilo categoria*/
   .tamCategoria {
@@ -512,11 +504,40 @@ form .textLogin {
 }
 /*Vista Escritorio*/
 @media (min-width: 1024px) {
+  .menuL {
+    transition: all 0.2s;
+  }
+  .menuL:hover {
+    color: #008099;
+    font-size: 22px;
+  }
   h1 {
     font-size: 50px;
   }
+  .boxNoticias img {
+    transition: all 0.2s;
+  }
+  .boxNoticias img:hover {
+    width: 270px;
+    height: 240px;
+    box-shadow: 5px 5px 7px #495f5f;
+  }
   .carruselEstreno {
     display: none;
+  }
+  .iconosLogin .icono {
+    transition: all 0.2s;
+  }
+  .iconosLogin .icono:hover {
+    font-size: 33px;
+    color: #113941;
+  }
+  .footerLink a {
+    transition: all 0.3s;
+  }
+  .footerLink a:hover {
+    font-weight: bold;
+    color: #008099;
   }
 }
 
