@@ -4,6 +4,7 @@
 body {
   font-family: "Catamaran", sans-serif;
   background-color: #367578;
+  overflow-x: hidden;
 }
 
 /*estilo para el menu*/
@@ -394,6 +395,9 @@ form .textLogin {
 /* APLICANDO MEDIA QUERY */
 /* PARA TELEFONO */
 @media (min-width: 319px) and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
   .logo {
     width: 60px;
   }
@@ -408,6 +412,7 @@ form .textLogin {
     padding: auto;
     text-align: center;
     font-size: 30px;
+    line-height: 1;
   }
   .portadaInicio p {
     display: none;
