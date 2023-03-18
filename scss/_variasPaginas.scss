@@ -14,7 +14,6 @@
 
 .boxCategoria {
     color: $color_1;
-    // background: linear-gradient(45deg, #638879, #26acbd);
     background: radial-gradient(#9fcdd8, #396f77);
     border: 1px solid $color_1;
     p {
@@ -87,6 +86,19 @@
     h2 {
         font-weight: bold;
     }
+}
+
+/*Estilo lista*/
+.listaSub {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 35px;
+    padding-bottom: 15px;
+
+    h2 {
+        font-weight: bold;
+    }
+
 }
 
 /* Estilo para seccion Login */

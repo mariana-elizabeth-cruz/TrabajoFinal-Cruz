@@ -37,7 +37,7 @@ li {
   color: black;
   border: 1px solid black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 /* Estilo para titulo y portada */
@@ -71,8 +71,8 @@ h1 {
 
 /* Acerca de nosotros*/
 .about {
-  margin: 15px;
-  padding: 5px;
+  margin: 25px;
+  padding: 15px;
 }
 
 .aboutSombra {
@@ -169,7 +169,7 @@ h1 {
   color: black;
   border: 1px solid black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .btnClose {
@@ -182,7 +182,7 @@ h1 {
   color: black;
   border: 1px solid black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .modalFondo {
@@ -314,6 +314,17 @@ footer .footerLink {
   font-weight: bold;
 }
 
+/*Estilo lista*/
+.listaSub {
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 35px;
+  padding-bottom: 15px;
+}
+.listaSub h2 {
+  font-weight: bold;
+}
+
 /* Estilo para seccion Login */
 .tituloSesion {
   margin-top: 70px;
@@ -358,7 +369,7 @@ form .textLogin {
   color: black;
   border: 1px solid black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .iconosLogin a {
@@ -406,6 +417,9 @@ form .textLogin {
     margin-top: 25px;
     padding-top: 15px;
   }
+  .boxCategoria p {
+    display: none;
+  }
   /*Estilo Estreno*/
   .boxPortada {
     display: none;
@@ -433,7 +447,7 @@ form .textLogin {
     margin: 7px;
   }
   .footerLink li {
-    margin-left: 40px;
+    margin-left: 55px;
   }
   .footerText {
     margin-top: 0;
