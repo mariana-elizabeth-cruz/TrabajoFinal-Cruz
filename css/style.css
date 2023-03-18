@@ -385,9 +385,6 @@ form .textLogin {
 /* APLICANDO MEDIA QUERY */
 /* PARA TELEFONO */
 @media (min-width: 320px) and (max-width: 767px) {
-  body {
-    overflow-x: hidden;
-  }
   .logo {
     width: 60px;
   }
