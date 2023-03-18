@@ -1,7 +1,10 @@
 /* APLICANDO MEDIA QUERY */
 
 /* PARA TELEFONO */
-@media (max-width: 767px) {
+@media (min-width:320px) and (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
     //Header
     .logo {
         width: 60px;
@@ -79,7 +82,7 @@
         margin: 7px;
     }
     .footerLink li {
-        margin-left: 55px;
+        margin-left: 100px;
     }
 
     .footerText {

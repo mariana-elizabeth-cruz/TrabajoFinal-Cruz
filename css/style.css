@@ -384,7 +384,10 @@ form .textLogin {
 
 /* APLICANDO MEDIA QUERY */
 /* PARA TELEFONO */
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
   .logo {
     width: 60px;
   }
@@ -447,7 +450,7 @@ form .textLogin {
     margin: 7px;
   }
   .footerLink li {
-    margin-left: 55px;
+    margin-left: 100px;
   }
   .footerText {
     margin-top: 0;
