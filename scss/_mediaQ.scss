@@ -1,7 +1,7 @@
 /* APLICANDO MEDIA QUERY */
 
 /* PARA TELEFONO */
-@media (min-width:320px) and (max-width: 767px) {
+@media (min-width:319px) and (max-width: 767px) {
     //Header
     .logo {
         width: 60px;
@@ -9,19 +9,30 @@
     .tamMenu {
         width: 250px;
     }
-    .tamMenu a {
-        font-size: 15px;
-    }
+    .tamMenu {
+        a {
+            font-size: 15px;
+        }
+    } 
 
 // portada
-    .titulo{
-        font-size: 30px;
-        line-height: 1;
-        padding: 80px 0 0 0;
+    .portadaInicio {
+        h1 {
+            margin:auto;
+            padding: auto;
+            text-align: center;
+            font-size: 30px;
+            // line-height: 1;
+        }
+        p {
+            display: none;
+        }
+        
     }
-    .banner .parrafo {
-        display: none;
+    .cajaPortada {
+        height: 220px;
     }
+
     //Seccion about
     .subTitulo {
         font-size: $parrafo + 5px;
@@ -53,17 +64,29 @@
         display: none;
     }
 
-    .boxEstreno p {
-        display: none;
+    .boxEstreno {
+        p {
+            display: none;
+        }
+        
     }
 
-    .tituloDos h1 {
-        font-size: 40px;
+    .tituloDos {
+        h1 {
+            margin-top: 0;
+            font-size: 40px;
+        }
+    }
+    /*Estilo lista*/
+    .listaSub {
+        margin-bottom: 0;
     }
 
     /*Estilo Login*/
-    .tituloSesion h1 {
-        font-size: 35px;
+    .tituloSesion {
+        h1 {
+            font-size: 35px;
+        }
     }
     .boxSesion {
         margin-bottom: 0;
@@ -78,15 +101,20 @@
         font-size: 20px;
         margin: 7px;
     }
-    .footerLink li {
-        margin-left: 100px;
-    }
+    .footerLink {
+        li {
+            margin-left: 100px;
+            padding-left: 20px;
+        }
+    } 
 
     .footerText {
         margin-top: 0;
     }
-    .footerText h4 {
-        font-size: 18px;
+    .footerText {
+        h4 {
+            font-size: 18px;
+        }
     } 
 
 }
@@ -95,15 +123,16 @@
 @media (min-width:768px) and (max-width:1023px) {
 
     // portada
-    .titulo {
-        font-size: 3rem;
-        padding-top: 10rem;
-        padding-left: 0;
+    .portadaInicio {
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: $parrafo;
+        }
     }
-    
-    .banner .parrafo {
-        font-size: $parrafo;
-        padding-left: 0;
+    .cajaPortada {
+        height: 400px;
     }
 
     //Acerca de
@@ -119,17 +148,21 @@
         margin:  0;
         padding: 0;
     }
-    .boxSubtitulo h2 {
-        font-size: 30px;
+    .boxSubtitulo {
+        h2 {
+            font-size: 30px;
+        }
     }
     .infoExtra {
         margin-top: 0;
     }
 
-    .boxNoticias img {
-        width: 200px;
-        height: 170px;
-    }
+    .boxNoticias {
+        img {
+            width: 200px;
+            height: 170px;
+        }
+    } 
     
     /*Estilo categoria*/
     .tamCategoria {
@@ -138,8 +171,10 @@
     }
 
     /*Estilo Estreno*/
-    .tituloDos h1 {
-        font-size: 70px;
+    .tituloDos {
+        h1 {
+            font-size: 70px;
+        }
     }
 
     .boxPortada {
@@ -158,13 +193,16 @@
         margin: 7px;
     }
 
-    .footerLink li {
-        margin-left: 0;
+    .footerLink {
+        li {
+            margin-left: 0;
+        }
+    } 
+    .footerText {
+        h4 {
+            font-size: 18px;
+        }
     }
-    .footerText h4 {
-        font-size: 18px;
-    }
-
 }
 
 /*Vista Escritorio*/
@@ -179,19 +217,17 @@
             font-size: 22px;
         }
     }
-    // Portada
-    h1 {
-        font-size: 50px;
-    }
 
     //Noticias
-    .boxNoticias img{
-        transition: all 0.2s;
-        
-        &:hover {
-            width: 270px;
-            height: 240px;
-            box-shadow: 5px 5px 7px #495f5f;
+    .boxNoticias {
+        img{
+            transition: all 0.2s;
+            
+            &:hover {
+                width: 270px;
+                height: 240px;
+                box-shadow: 5px 5px 7px #495f5f;
+            }
         }
     }
 
@@ -201,7 +237,7 @@
     }
 
     //Inciar session
-    .iconosLogin {    
+    .iconosLogin {  
         .icono {
             transition: all 0.2s;
     
@@ -213,13 +249,17 @@
     }
 
     //Footer
-    .footerLink a {
-        transition: all 0.3s;
-    }
+    .footerLink {
+        a {
+            transition: all 0.3s;
+        }
+    } 
 
-    .footerLink a:hover {
-        font-weight: bold;
-        color: $colorNav_1;
-    }
+    .footerLink {
+        a:hover {
+            font-weight: bold;
+            color: $colorNav_1;
+        }
+    } 
 
 }
