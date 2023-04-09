@@ -48,7 +48,7 @@ li {
 }
 .portadaInicio h1 {
   margin: 50px;
-  padding: 40px 30px 0 30px;
+  padding: 200px 30px 0 30px;
   font-size: 80px;
   letter-spacing: 6px;
   font-weight: bold;
@@ -60,14 +60,20 @@ li {
   padding: 20px;
   font-size: 30px;
   text-shadow: 1px 1px 2px black;
-  color: black;
+  color: rgb(243, 237, 237);
+}
+
+.banner {
+  background-image: url(../imagenes/banner.jpg);
+  background-size: cover;
+  width: 100%;
 }
 
 .cajaPortada {
   box-shadow: 10px 10px 30px #000000;
   border-radius: 15px;
   background-color: #759797;
-  height: 500px;
+  height: 700px;
 }
 
 /* Acerca de nosotros*/
@@ -79,6 +85,7 @@ li {
 .aboutSombra {
   box-shadow: 10px 10px 30px #000000;
   background-color: #678282;
+  width: 100%;
 }
 
 .subTitulo {
@@ -409,7 +416,7 @@ form .textLogin {
   }
   .portadaInicio h1 {
     margin: auto;
-    padding: auto;
+    padding-top: 40px;
     text-align: center;
     font-size: 30px;
     line-height: 1;
@@ -483,6 +490,7 @@ form .textLogin {
 /* PARA TABLET */
 @media (min-width: 768px) and (max-width: 1023px) {
   .portadaInicio h1 {
+    padding-top: 50px;
     font-size: 3rem;
   }
   .portadaInicio p {
